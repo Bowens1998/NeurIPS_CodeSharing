@@ -1,0 +1,5402 @@
+[
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 1,
+    "trial_index": 0,
+    "level_trial_index": 0,
+    "contextual_belief": 95.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 1,
+    "trial_index": 1,
+    "level_trial_index": 1,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 1,
+    "trial_index": 2,
+    "level_trial_index": 2,
+    "contextual_belief": 90.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 1,
+    "trial_index": 3,
+    "level_trial_index": 3,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 1,
+    "trial_index": 4,
+    "level_trial_index": 4,
+    "contextual_belief": 90.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 1,
+    "trial_index": 5,
+    "level_trial_index": 5,
+    "contextual_belief": 90.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 1,
+    "trial_index": 6,
+    "level_trial_index": 6,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 1,
+    "trial_index": 7,
+    "level_trial_index": 7,
+    "contextual_belief": 85.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 1,
+    "trial_index": 8,
+    "level_trial_index": 8,
+    "contextual_belief": 90.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 1,
+    "trial_index": 9,
+    "level_trial_index": 9,
+    "contextual_belief": 90.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 1,
+    "trial_index": 10,
+    "level_trial_index": 10,
+    "contextual_belief": 90.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 1,
+    "trial_index": 11,
+    "level_trial_index": 11,
+    "contextual_belief": 90.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 1,
+    "trial_index": 12,
+    "level_trial_index": 12,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 1,
+    "trial_index": 13,
+    "level_trial_index": 13,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 1,
+    "trial_index": 14,
+    "level_trial_index": 14,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 1,
+    "trial_index": 15,
+    "level_trial_index": 15,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 1,
+    "trial_index": 16,
+    "level_trial_index": 16,
+    "contextual_belief": 20.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 1,
+    "trial_index": 17,
+    "level_trial_index": 17,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 1,
+    "trial_index": 18,
+    "level_trial_index": 18,
+    "contextual_belief": 90.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 1,
+    "trial_index": 19,
+    "level_trial_index": 19,
+    "contextual_belief": 90.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 1,
+    "trial_index": 20,
+    "level_trial_index": 20,
+    "contextual_belief": 90.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 1,
+    "trial_index": 21,
+    "level_trial_index": 21,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 1,
+    "trial_index": 22,
+    "level_trial_index": 22,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 1,
+    "trial_index": 23,
+    "level_trial_index": 23,
+    "contextual_belief": 90.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 1,
+    "trial_index": 24,
+    "level_trial_index": 24,
+    "contextual_belief": 90.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 1,
+    "trial_index": 25,
+    "level_trial_index": 25,
+    "contextual_belief": 90.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 1,
+    "trial_index": 26,
+    "level_trial_index": 26,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 1,
+    "trial_index": 27,
+    "level_trial_index": 27,
+    "contextual_belief": 90.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 1,
+    "trial_index": 28,
+    "level_trial_index": 28,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 1,
+    "trial_index": 29,
+    "level_trial_index": 29,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 2,
+    "trial_index": 30,
+    "level_trial_index": 0,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 2,
+    "trial_index": 31,
+    "level_trial_index": 1,
+    "contextual_belief": 90.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 2,
+    "trial_index": 32,
+    "level_trial_index": 2,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 2,
+    "trial_index": 33,
+    "level_trial_index": 3,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 2,
+    "trial_index": 34,
+    "level_trial_index": 4,
+    "contextual_belief": 90.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 2,
+    "trial_index": 35,
+    "level_trial_index": 5,
+    "contextual_belief": 90.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 2,
+    "trial_index": 36,
+    "level_trial_index": 6,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 2,
+    "trial_index": 37,
+    "level_trial_index": 7,
+    "contextual_belief": 95.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 2,
+    "trial_index": 38,
+    "level_trial_index": 8,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 2,
+    "trial_index": 39,
+    "level_trial_index": 9,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 2,
+    "trial_index": 40,
+    "level_trial_index": 10,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 2,
+    "trial_index": 41,
+    "level_trial_index": 11,
+    "contextual_belief": 90.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 2,
+    "trial_index": 42,
+    "level_trial_index": 12,
+    "contextual_belief": 90.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 2,
+    "trial_index": 43,
+    "level_trial_index": 13,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 2,
+    "trial_index": 44,
+    "level_trial_index": 14,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 2,
+    "trial_index": 45,
+    "level_trial_index": 15,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 2,
+    "trial_index": 46,
+    "level_trial_index": 16,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 2,
+    "trial_index": 47,
+    "level_trial_index": 17,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 2,
+    "trial_index": 48,
+    "level_trial_index": 18,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 2,
+    "trial_index": 49,
+    "level_trial_index": 19,
+    "contextual_belief": 85.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 2,
+    "trial_index": 50,
+    "level_trial_index": 20,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 2,
+    "trial_index": 51,
+    "level_trial_index": 21,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 2,
+    "trial_index": 52,
+    "level_trial_index": 22,
+    "contextual_belief": 90.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 2,
+    "trial_index": 53,
+    "level_trial_index": 23,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 2,
+    "trial_index": 54,
+    "level_trial_index": 24,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 2,
+    "trial_index": 55,
+    "level_trial_index": 25,
+    "contextual_belief": 90.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 2,
+    "trial_index": 56,
+    "level_trial_index": 26,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 2,
+    "trial_index": 57,
+    "level_trial_index": 27,
+    "contextual_belief": 95.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 2,
+    "trial_index": 58,
+    "level_trial_index": 28,
+    "contextual_belief": 90.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 2,
+    "trial_index": 59,
+    "level_trial_index": 29,
+    "contextual_belief": 90.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 3,
+    "trial_index": 60,
+    "level_trial_index": 0,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 3,
+    "trial_index": 61,
+    "level_trial_index": 1,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 3,
+    "trial_index": 62,
+    "level_trial_index": 2,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 3,
+    "trial_index": 63,
+    "level_trial_index": 3,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 3,
+    "trial_index": 64,
+    "level_trial_index": 4,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 3,
+    "trial_index": 65,
+    "level_trial_index": 5,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 3,
+    "trial_index": 66,
+    "level_trial_index": 6,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 3,
+    "trial_index": 67,
+    "level_trial_index": 7,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 3,
+    "trial_index": 68,
+    "level_trial_index": 8,
+    "contextual_belief": 90.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 3,
+    "trial_index": 69,
+    "level_trial_index": 9,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 3,
+    "trial_index": 70,
+    "level_trial_index": 10,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 3,
+    "trial_index": 71,
+    "level_trial_index": 11,
+    "contextual_belief": 90.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 3,
+    "trial_index": 72,
+    "level_trial_index": 12,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 3,
+    "trial_index": 73,
+    "level_trial_index": 13,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 3,
+    "trial_index": 74,
+    "level_trial_index": 14,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 3,
+    "trial_index": 75,
+    "level_trial_index": 15,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 3,
+    "trial_index": 76,
+    "level_trial_index": 16,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 3,
+    "trial_index": 77,
+    "level_trial_index": 17,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 3,
+    "trial_index": 78,
+    "level_trial_index": 18,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 3,
+    "trial_index": 79,
+    "level_trial_index": 19,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 3,
+    "trial_index": 80,
+    "level_trial_index": 20,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 3,
+    "trial_index": 81,
+    "level_trial_index": 21,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 3,
+    "trial_index": 82,
+    "level_trial_index": 22,
+    "contextual_belief": 90.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 3,
+    "trial_index": 83,
+    "level_trial_index": 23,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 3,
+    "trial_index": 84,
+    "level_trial_index": 24,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 3,
+    "trial_index": 85,
+    "level_trial_index": 25,
+    "contextual_belief": 15.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 3,
+    "trial_index": 86,
+    "level_trial_index": 26,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 3,
+    "trial_index": 87,
+    "level_trial_index": 27,
+    "contextual_belief": 85.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 3,
+    "trial_index": 88,
+    "level_trial_index": 28,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Grok 4",
+    "model_key": "Grok4",
+    "level": 3,
+    "trial_index": 89,
+    "level_trial_index": 29,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 1,
+    "trial_index": 0,
+    "level_trial_index": 0,
+    "contextual_belief": 78.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 1,
+    "trial_index": 1,
+    "level_trial_index": 1,
+    "contextual_belief": 78.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 1,
+    "trial_index": 2,
+    "level_trial_index": 2,
+    "contextual_belief": 78.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 1,
+    "trial_index": 3,
+    "level_trial_index": 3,
+    "contextual_belief": 78.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 1,
+    "trial_index": 4,
+    "level_trial_index": 4,
+    "contextual_belief": 78.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 1,
+    "trial_index": 5,
+    "level_trial_index": 5,
+    "contextual_belief": 78.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 1,
+    "trial_index": 6,
+    "level_trial_index": 6,
+    "contextual_belief": 78.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 1,
+    "trial_index": 7,
+    "level_trial_index": 7,
+    "contextual_belief": 78.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 1,
+    "trial_index": 8,
+    "level_trial_index": 8,
+    "contextual_belief": 78.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 1,
+    "trial_index": 9,
+    "level_trial_index": 9,
+    "contextual_belief": 78.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 1,
+    "trial_index": 10,
+    "level_trial_index": 10,
+    "contextual_belief": 78.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 1,
+    "trial_index": 11,
+    "level_trial_index": 11,
+    "contextual_belief": 78.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 1,
+    "trial_index": 12,
+    "level_trial_index": 12,
+    "contextual_belief": 78.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 1,
+    "trial_index": 13,
+    "level_trial_index": 13,
+    "contextual_belief": 78.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 1,
+    "trial_index": 14,
+    "level_trial_index": 14,
+    "contextual_belief": 78.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 1,
+    "trial_index": 15,
+    "level_trial_index": 15,
+    "contextual_belief": 78.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 1,
+    "trial_index": 16,
+    "level_trial_index": 16,
+    "contextual_belief": 78.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 1,
+    "trial_index": 17,
+    "level_trial_index": 17,
+    "contextual_belief": 78.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 1,
+    "trial_index": 18,
+    "level_trial_index": 18,
+    "contextual_belief": 78.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 1,
+    "trial_index": 19,
+    "level_trial_index": 19,
+    "contextual_belief": 78.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 1,
+    "trial_index": 20,
+    "level_trial_index": 20,
+    "contextual_belief": 78.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 1,
+    "trial_index": 21,
+    "level_trial_index": 21,
+    "contextual_belief": 78.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 1,
+    "trial_index": 22,
+    "level_trial_index": 22,
+    "contextual_belief": 78.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 1,
+    "trial_index": 23,
+    "level_trial_index": 23,
+    "contextual_belief": 78.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 1,
+    "trial_index": 24,
+    "level_trial_index": 24,
+    "contextual_belief": 78.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 1,
+    "trial_index": 25,
+    "level_trial_index": 25,
+    "contextual_belief": 78.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 1,
+    "trial_index": 26,
+    "level_trial_index": 26,
+    "contextual_belief": 78.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 1,
+    "trial_index": 27,
+    "level_trial_index": 27,
+    "contextual_belief": 78.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 1,
+    "trial_index": 28,
+    "level_trial_index": 28,
+    "contextual_belief": 78.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 1,
+    "trial_index": 29,
+    "level_trial_index": 29,
+    "contextual_belief": 78.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 2,
+    "trial_index": 30,
+    "level_trial_index": 0,
+    "contextual_belief": 92.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 2,
+    "trial_index": 31,
+    "level_trial_index": 1,
+    "contextual_belief": 92.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 2,
+    "trial_index": 32,
+    "level_trial_index": 2,
+    "contextual_belief": 92.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 2,
+    "trial_index": 33,
+    "level_trial_index": 3,
+    "contextual_belief": 92.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 2,
+    "trial_index": 34,
+    "level_trial_index": 4,
+    "contextual_belief": 92.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 2,
+    "trial_index": 35,
+    "level_trial_index": 5,
+    "contextual_belief": 92.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 2,
+    "trial_index": 36,
+    "level_trial_index": 6,
+    "contextual_belief": 92.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 2,
+    "trial_index": 37,
+    "level_trial_index": 7,
+    "contextual_belief": 92.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 2,
+    "trial_index": 38,
+    "level_trial_index": 8,
+    "contextual_belief": 92.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 2,
+    "trial_index": 39,
+    "level_trial_index": 9,
+    "contextual_belief": 92.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 2,
+    "trial_index": 40,
+    "level_trial_index": 10,
+    "contextual_belief": 92.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 2,
+    "trial_index": 41,
+    "level_trial_index": 11,
+    "contextual_belief": 92.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 2,
+    "trial_index": 42,
+    "level_trial_index": 12,
+    "contextual_belief": 92.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 2,
+    "trial_index": 43,
+    "level_trial_index": 13,
+    "contextual_belief": 92.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 2,
+    "trial_index": 44,
+    "level_trial_index": 14,
+    "contextual_belief": 92.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 2,
+    "trial_index": 45,
+    "level_trial_index": 15,
+    "contextual_belief": 92.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 2,
+    "trial_index": 46,
+    "level_trial_index": 16,
+    "contextual_belief": 92.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 2,
+    "trial_index": 47,
+    "level_trial_index": 17,
+    "contextual_belief": 92.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 2,
+    "trial_index": 48,
+    "level_trial_index": 18,
+    "contextual_belief": 92.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 2,
+    "trial_index": 49,
+    "level_trial_index": 19,
+    "contextual_belief": 92.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 2,
+    "trial_index": 50,
+    "level_trial_index": 20,
+    "contextual_belief": 92.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 2,
+    "trial_index": 51,
+    "level_trial_index": 21,
+    "contextual_belief": 92.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 2,
+    "trial_index": 52,
+    "level_trial_index": 22,
+    "contextual_belief": 92.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 2,
+    "trial_index": 53,
+    "level_trial_index": 23,
+    "contextual_belief": 92.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 2,
+    "trial_index": 54,
+    "level_trial_index": 24,
+    "contextual_belief": 92.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 2,
+    "trial_index": 55,
+    "level_trial_index": 25,
+    "contextual_belief": 92.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 2,
+    "trial_index": 56,
+    "level_trial_index": 26,
+    "contextual_belief": 92.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 2,
+    "trial_index": 57,
+    "level_trial_index": 27,
+    "contextual_belief": 92.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 2,
+    "trial_index": 58,
+    "level_trial_index": 28,
+    "contextual_belief": 92.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 2,
+    "trial_index": 59,
+    "level_trial_index": 29,
+    "contextual_belief": 92.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 3,
+    "trial_index": 60,
+    "level_trial_index": 0,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 3,
+    "trial_index": 61,
+    "level_trial_index": 1,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 3,
+    "trial_index": 62,
+    "level_trial_index": 2,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 3,
+    "trial_index": 63,
+    "level_trial_index": 3,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 3,
+    "trial_index": 64,
+    "level_trial_index": 4,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 3,
+    "trial_index": 65,
+    "level_trial_index": 5,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 3,
+    "trial_index": 66,
+    "level_trial_index": 6,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 3,
+    "trial_index": 67,
+    "level_trial_index": 7,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 3,
+    "trial_index": 68,
+    "level_trial_index": 8,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 3,
+    "trial_index": 69,
+    "level_trial_index": 9,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 3,
+    "trial_index": 70,
+    "level_trial_index": 10,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 3,
+    "trial_index": 71,
+    "level_trial_index": 11,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 3,
+    "trial_index": 72,
+    "level_trial_index": 12,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 3,
+    "trial_index": 73,
+    "level_trial_index": 13,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 3,
+    "trial_index": 74,
+    "level_trial_index": 14,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 3,
+    "trial_index": 75,
+    "level_trial_index": 15,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 3,
+    "trial_index": 76,
+    "level_trial_index": 16,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 3,
+    "trial_index": 77,
+    "level_trial_index": 17,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 3,
+    "trial_index": 78,
+    "level_trial_index": 18,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 3,
+    "trial_index": 79,
+    "level_trial_index": 19,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 3,
+    "trial_index": 80,
+    "level_trial_index": 20,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 3,
+    "trial_index": 81,
+    "level_trial_index": 21,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 3,
+    "trial_index": 82,
+    "level_trial_index": 22,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 3,
+    "trial_index": 83,
+    "level_trial_index": 23,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 3,
+    "trial_index": 84,
+    "level_trial_index": 24,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 3,
+    "trial_index": 85,
+    "level_trial_index": 25,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 3,
+    "trial_index": 86,
+    "level_trial_index": 26,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 3,
+    "trial_index": 87,
+    "level_trial_index": 27,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 3,
+    "trial_index": 88,
+    "level_trial_index": 28,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Claude Sonnet 4.5",
+    "model_key": "ClaudeSonnet4.5",
+    "level": 3,
+    "trial_index": 89,
+    "level_trial_index": 29,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 1,
+    "trial_index": 0,
+    "level_trial_index": 0,
+    "contextual_belief": 80.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 1,
+    "trial_index": 1,
+    "level_trial_index": 1,
+    "contextual_belief": 85.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 1,
+    "trial_index": 2,
+    "level_trial_index": 2,
+    "contextual_belief": 85.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 1,
+    "trial_index": 3,
+    "level_trial_index": 3,
+    "contextual_belief": 85.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 1,
+    "trial_index": 4,
+    "level_trial_index": 4,
+    "contextual_belief": 85.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 1,
+    "trial_index": 5,
+    "level_trial_index": 5,
+    "contextual_belief": 85.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 1,
+    "trial_index": 6,
+    "level_trial_index": 6,
+    "contextual_belief": 80.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 1,
+    "trial_index": 7,
+    "level_trial_index": 7,
+    "contextual_belief": 80.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 1,
+    "trial_index": 8,
+    "level_trial_index": 8,
+    "contextual_belief": 80.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 1,
+    "trial_index": 9,
+    "level_trial_index": 9,
+    "contextual_belief": 80.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 1,
+    "trial_index": 10,
+    "level_trial_index": 10,
+    "contextual_belief": 80.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 1,
+    "trial_index": 11,
+    "level_trial_index": 11,
+    "contextual_belief": 85.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 1,
+    "trial_index": 12,
+    "level_trial_index": 12,
+    "contextual_belief": 80.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 1,
+    "trial_index": 13,
+    "level_trial_index": 13,
+    "contextual_belief": 85.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 1,
+    "trial_index": 14,
+    "level_trial_index": 14,
+    "contextual_belief": 85.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 1,
+    "trial_index": 15,
+    "level_trial_index": 15,
+    "contextual_belief": 80.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 1,
+    "trial_index": 16,
+    "level_trial_index": 16,
+    "contextual_belief": 80.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 1,
+    "trial_index": 17,
+    "level_trial_index": 17,
+    "contextual_belief": 80.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 1,
+    "trial_index": 18,
+    "level_trial_index": 18,
+    "contextual_belief": 80.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 1,
+    "trial_index": 19,
+    "level_trial_index": 19,
+    "contextual_belief": 80.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 1,
+    "trial_index": 20,
+    "level_trial_index": 20,
+    "contextual_belief": 85.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 1,
+    "trial_index": 21,
+    "level_trial_index": 21,
+    "contextual_belief": 80.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 1,
+    "trial_index": 22,
+    "level_trial_index": 22,
+    "contextual_belief": 85.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 1,
+    "trial_index": 23,
+    "level_trial_index": 23,
+    "contextual_belief": 85.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 1,
+    "trial_index": 24,
+    "level_trial_index": 24,
+    "contextual_belief": 80.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 1,
+    "trial_index": 25,
+    "level_trial_index": 25,
+    "contextual_belief": 85.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 1,
+    "trial_index": 26,
+    "level_trial_index": 26,
+    "contextual_belief": 80.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 1,
+    "trial_index": 27,
+    "level_trial_index": 27,
+    "contextual_belief": 80.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 1,
+    "trial_index": 28,
+    "level_trial_index": 28,
+    "contextual_belief": 80.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 1,
+    "trial_index": 29,
+    "level_trial_index": 29,
+    "contextual_belief": 85.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 2,
+    "trial_index": 30,
+    "level_trial_index": 0,
+    "contextual_belief": 100.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 2,
+    "trial_index": 31,
+    "level_trial_index": 1,
+    "contextual_belief": 100.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 2,
+    "trial_index": 32,
+    "level_trial_index": 2,
+    "contextual_belief": 100.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 2,
+    "trial_index": 33,
+    "level_trial_index": 3,
+    "contextual_belief": 100.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 2,
+    "trial_index": 34,
+    "level_trial_index": 4,
+    "contextual_belief": 100.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 2,
+    "trial_index": 35,
+    "level_trial_index": 5,
+    "contextual_belief": 100.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 2,
+    "trial_index": 36,
+    "level_trial_index": 6,
+    "contextual_belief": 100.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 2,
+    "trial_index": 37,
+    "level_trial_index": 7,
+    "contextual_belief": 100.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 2,
+    "trial_index": 38,
+    "level_trial_index": 8,
+    "contextual_belief": 100.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 2,
+    "trial_index": 39,
+    "level_trial_index": 9,
+    "contextual_belief": 100.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 2,
+    "trial_index": 40,
+    "level_trial_index": 10,
+    "contextual_belief": 100.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 2,
+    "trial_index": 41,
+    "level_trial_index": 11,
+    "contextual_belief": 100.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 2,
+    "trial_index": 42,
+    "level_trial_index": 12,
+    "contextual_belief": 100.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 2,
+    "trial_index": 43,
+    "level_trial_index": 13,
+    "contextual_belief": 100.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 2,
+    "trial_index": 44,
+    "level_trial_index": 14,
+    "contextual_belief": 100.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 2,
+    "trial_index": 45,
+    "level_trial_index": 15,
+    "contextual_belief": 100.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 2,
+    "trial_index": 46,
+    "level_trial_index": 16,
+    "contextual_belief": 100.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 2,
+    "trial_index": 47,
+    "level_trial_index": 17,
+    "contextual_belief": 100.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 2,
+    "trial_index": 48,
+    "level_trial_index": 18,
+    "contextual_belief": 100.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 2,
+    "trial_index": 49,
+    "level_trial_index": 19,
+    "contextual_belief": 100.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 2,
+    "trial_index": 50,
+    "level_trial_index": 20,
+    "contextual_belief": 100.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 2,
+    "trial_index": 51,
+    "level_trial_index": 21,
+    "contextual_belief": 100.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 2,
+    "trial_index": 52,
+    "level_trial_index": 22,
+    "contextual_belief": 100.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 2,
+    "trial_index": 53,
+    "level_trial_index": 23,
+    "contextual_belief": 100.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 2,
+    "trial_index": 54,
+    "level_trial_index": 24,
+    "contextual_belief": 100.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 2,
+    "trial_index": 55,
+    "level_trial_index": 25,
+    "contextual_belief": 100.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 2,
+    "trial_index": 56,
+    "level_trial_index": 26,
+    "contextual_belief": 100.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 2,
+    "trial_index": 57,
+    "level_trial_index": 27,
+    "contextual_belief": 100.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 2,
+    "trial_index": 58,
+    "level_trial_index": 28,
+    "contextual_belief": 100.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 2,
+    "trial_index": 59,
+    "level_trial_index": 29,
+    "contextual_belief": 100.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 3,
+    "trial_index": 60,
+    "level_trial_index": 0,
+    "contextual_belief": 100.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 3,
+    "trial_index": 61,
+    "level_trial_index": 1,
+    "contextual_belief": 100.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 3,
+    "trial_index": 62,
+    "level_trial_index": 2,
+    "contextual_belief": 100.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 3,
+    "trial_index": 63,
+    "level_trial_index": 3,
+    "contextual_belief": 100.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 3,
+    "trial_index": 64,
+    "level_trial_index": 4,
+    "contextual_belief": 100.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 3,
+    "trial_index": 65,
+    "level_trial_index": 5,
+    "contextual_belief": 100.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 3,
+    "trial_index": 66,
+    "level_trial_index": 6,
+    "contextual_belief": 100.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 3,
+    "trial_index": 67,
+    "level_trial_index": 7,
+    "contextual_belief": 100.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 3,
+    "trial_index": 68,
+    "level_trial_index": 8,
+    "contextual_belief": 100.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 3,
+    "trial_index": 69,
+    "level_trial_index": 9,
+    "contextual_belief": 100.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 3,
+    "trial_index": 70,
+    "level_trial_index": 10,
+    "contextual_belief": 100.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 3,
+    "trial_index": 71,
+    "level_trial_index": 11,
+    "contextual_belief": 100.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 3,
+    "trial_index": 72,
+    "level_trial_index": 12,
+    "contextual_belief": 100.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 3,
+    "trial_index": 73,
+    "level_trial_index": 13,
+    "contextual_belief": 100.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 3,
+    "trial_index": 74,
+    "level_trial_index": 14,
+    "contextual_belief": 100.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 3,
+    "trial_index": 75,
+    "level_trial_index": 15,
+    "contextual_belief": 100.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 3,
+    "trial_index": 76,
+    "level_trial_index": 16,
+    "contextual_belief": 100.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 3,
+    "trial_index": 77,
+    "level_trial_index": 17,
+    "contextual_belief": 100.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 3,
+    "trial_index": 78,
+    "level_trial_index": 18,
+    "contextual_belief": 100.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 3,
+    "trial_index": 79,
+    "level_trial_index": 19,
+    "contextual_belief": 100.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 3,
+    "trial_index": 80,
+    "level_trial_index": 20,
+    "contextual_belief": 100.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 3,
+    "trial_index": 81,
+    "level_trial_index": 21,
+    "contextual_belief": 100.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 3,
+    "trial_index": 82,
+    "level_trial_index": 22,
+    "contextual_belief": 100.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 3,
+    "trial_index": 83,
+    "level_trial_index": 23,
+    "contextual_belief": 100.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 3,
+    "trial_index": 84,
+    "level_trial_index": 24,
+    "contextual_belief": 100.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 3,
+    "trial_index": 85,
+    "level_trial_index": 25,
+    "contextual_belief": 100.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 3,
+    "trial_index": 86,
+    "level_trial_index": 26,
+    "contextual_belief": 100.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 3,
+    "trial_index": 87,
+    "level_trial_index": 27,
+    "contextual_belief": 100.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 3,
+    "trial_index": 88,
+    "level_trial_index": 28,
+    "contextual_belief": 100.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "DeepSeek V3.2",
+    "model_key": "DeepSeekV3.2",
+    "level": 3,
+    "trial_index": 89,
+    "level_trial_index": 29,
+    "contextual_belief": 100.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 1,
+    "trial_index": 0,
+    "level_trial_index": 0,
+    "contextual_belief": 80.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 1,
+    "trial_index": 1,
+    "level_trial_index": 1,
+    "contextual_belief": 80.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 1,
+    "trial_index": 2,
+    "level_trial_index": 2,
+    "contextual_belief": 80.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 1,
+    "trial_index": 3,
+    "level_trial_index": 3,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 1,
+    "trial_index": 4,
+    "level_trial_index": 4,
+    "contextual_belief": 80.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 1,
+    "trial_index": 5,
+    "level_trial_index": 5,
+    "contextual_belief": 80.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 1,
+    "trial_index": 6,
+    "level_trial_index": 6,
+    "contextual_belief": 80.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 1,
+    "trial_index": 7,
+    "level_trial_index": 7,
+    "contextual_belief": 90.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 1,
+    "trial_index": 8,
+    "level_trial_index": 8,
+    "contextual_belief": 90.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 1,
+    "trial_index": 9,
+    "level_trial_index": 9,
+    "contextual_belief": 80.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 1,
+    "trial_index": 10,
+    "level_trial_index": 10,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 1,
+    "trial_index": 11,
+    "level_trial_index": 11,
+    "contextual_belief": 80.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 1,
+    "trial_index": 12,
+    "level_trial_index": 12,
+    "contextual_belief": 80.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 1,
+    "trial_index": 13,
+    "level_trial_index": 13,
+    "contextual_belief": 80.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 1,
+    "trial_index": 14,
+    "level_trial_index": 14,
+    "contextual_belief": 80.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 1,
+    "trial_index": 15,
+    "level_trial_index": 15,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 1,
+    "trial_index": 16,
+    "level_trial_index": 16,
+    "contextual_belief": 80.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 1,
+    "trial_index": 17,
+    "level_trial_index": 17,
+    "contextual_belief": 80.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 1,
+    "trial_index": 18,
+    "level_trial_index": 18,
+    "contextual_belief": 80.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 1,
+    "trial_index": 19,
+    "level_trial_index": 19,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 1,
+    "trial_index": 20,
+    "level_trial_index": 20,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 1,
+    "trial_index": 21,
+    "level_trial_index": 21,
+    "contextual_belief": 80.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 1,
+    "trial_index": 22,
+    "level_trial_index": 22,
+    "contextual_belief": 80.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 1,
+    "trial_index": 23,
+    "level_trial_index": 23,
+    "contextual_belief": 80.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 1,
+    "trial_index": 24,
+    "level_trial_index": 24,
+    "contextual_belief": 80.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 1,
+    "trial_index": 25,
+    "level_trial_index": 25,
+    "contextual_belief": 80.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 1,
+    "trial_index": 26,
+    "level_trial_index": 26,
+    "contextual_belief": 80.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 1,
+    "trial_index": 27,
+    "level_trial_index": 27,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 1,
+    "trial_index": 28,
+    "level_trial_index": 28,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 1,
+    "trial_index": 29,
+    "level_trial_index": 29,
+    "contextual_belief": 80.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 2,
+    "trial_index": 30,
+    "level_trial_index": 0,
+    "contextual_belief": 90.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 2,
+    "trial_index": 31,
+    "level_trial_index": 1,
+    "contextual_belief": 90.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 2,
+    "trial_index": 32,
+    "level_trial_index": 2,
+    "contextual_belief": 90.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 2,
+    "trial_index": 33,
+    "level_trial_index": 3,
+    "contextual_belief": 90.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 2,
+    "trial_index": 34,
+    "level_trial_index": 4,
+    "contextual_belief": 100.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 2,
+    "trial_index": 35,
+    "level_trial_index": 5,
+    "contextual_belief": 90.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 2,
+    "trial_index": 36,
+    "level_trial_index": 6,
+    "contextual_belief": 90.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 2,
+    "trial_index": 37,
+    "level_trial_index": 7,
+    "contextual_belief": 90.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 2,
+    "trial_index": 38,
+    "level_trial_index": 8,
+    "contextual_belief": 90.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 2,
+    "trial_index": 39,
+    "level_trial_index": 9,
+    "contextual_belief": 90.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 2,
+    "trial_index": 40,
+    "level_trial_index": 10,
+    "contextual_belief": 90.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 2,
+    "trial_index": 41,
+    "level_trial_index": 11,
+    "contextual_belief": 90.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 2,
+    "trial_index": 42,
+    "level_trial_index": 12,
+    "contextual_belief": 90.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 2,
+    "trial_index": 43,
+    "level_trial_index": 13,
+    "contextual_belief": 95.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 2,
+    "trial_index": 44,
+    "level_trial_index": 14,
+    "contextual_belief": 100.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 2,
+    "trial_index": 45,
+    "level_trial_index": 15,
+    "contextual_belief": 95.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 2,
+    "trial_index": 46,
+    "level_trial_index": 16,
+    "contextual_belief": 90.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 2,
+    "trial_index": 47,
+    "level_trial_index": 17,
+    "contextual_belief": 90.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 2,
+    "trial_index": 48,
+    "level_trial_index": 18,
+    "contextual_belief": 90.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 2,
+    "trial_index": 49,
+    "level_trial_index": 19,
+    "contextual_belief": 90.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 2,
+    "trial_index": 50,
+    "level_trial_index": 20,
+    "contextual_belief": 95.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 2,
+    "trial_index": 51,
+    "level_trial_index": 21,
+    "contextual_belief": 95.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 2,
+    "trial_index": 52,
+    "level_trial_index": 22,
+    "contextual_belief": 90.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 2,
+    "trial_index": 53,
+    "level_trial_index": 23,
+    "contextual_belief": 90.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 2,
+    "trial_index": 54,
+    "level_trial_index": 24,
+    "contextual_belief": 90.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 2,
+    "trial_index": 55,
+    "level_trial_index": 25,
+    "contextual_belief": 90.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 2,
+    "trial_index": 56,
+    "level_trial_index": 26,
+    "contextual_belief": 90.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 2,
+    "trial_index": 57,
+    "level_trial_index": 27,
+    "contextual_belief": 90.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 2,
+    "trial_index": 58,
+    "level_trial_index": 28,
+    "contextual_belief": 90.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 2,
+    "trial_index": 59,
+    "level_trial_index": 29,
+    "contextual_belief": 90.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 3,
+    "trial_index": 60,
+    "level_trial_index": 0,
+    "contextual_belief": 90.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 3,
+    "trial_index": 61,
+    "level_trial_index": 1,
+    "contextual_belief": 100.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 3,
+    "trial_index": 62,
+    "level_trial_index": 2,
+    "contextual_belief": 90.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 3,
+    "trial_index": 63,
+    "level_trial_index": 3,
+    "contextual_belief": 90.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 3,
+    "trial_index": 64,
+    "level_trial_index": 4,
+    "contextual_belief": 90.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 3,
+    "trial_index": 65,
+    "level_trial_index": 5,
+    "contextual_belief": 90.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 3,
+    "trial_index": 66,
+    "level_trial_index": 6,
+    "contextual_belief": 90.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 3,
+    "trial_index": 67,
+    "level_trial_index": 7,
+    "contextual_belief": 90.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 3,
+    "trial_index": 68,
+    "level_trial_index": 8,
+    "contextual_belief": 80.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 3,
+    "trial_index": 69,
+    "level_trial_index": 9,
+    "contextual_belief": 90.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 3,
+    "trial_index": 70,
+    "level_trial_index": 10,
+    "contextual_belief": 90.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 3,
+    "trial_index": 71,
+    "level_trial_index": 11,
+    "contextual_belief": 90.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 3,
+    "trial_index": 72,
+    "level_trial_index": 12,
+    "contextual_belief": 90.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 3,
+    "trial_index": 73,
+    "level_trial_index": 13,
+    "contextual_belief": 90.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 3,
+    "trial_index": 74,
+    "level_trial_index": 14,
+    "contextual_belief": 90.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 3,
+    "trial_index": 75,
+    "level_trial_index": 15,
+    "contextual_belief": 80.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 3,
+    "trial_index": 76,
+    "level_trial_index": 16,
+    "contextual_belief": 90.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 3,
+    "trial_index": 77,
+    "level_trial_index": 17,
+    "contextual_belief": 90.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 3,
+    "trial_index": 78,
+    "level_trial_index": 18,
+    "contextual_belief": 90.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 3,
+    "trial_index": 79,
+    "level_trial_index": 19,
+    "contextual_belief": 90.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 3,
+    "trial_index": 80,
+    "level_trial_index": 20,
+    "contextual_belief": 90.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 3,
+    "trial_index": 81,
+    "level_trial_index": 21,
+    "contextual_belief": 90.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 3,
+    "trial_index": 82,
+    "level_trial_index": 22,
+    "contextual_belief": 90.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 3,
+    "trial_index": 83,
+    "level_trial_index": 23,
+    "contextual_belief": 90.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 3,
+    "trial_index": 84,
+    "level_trial_index": 24,
+    "contextual_belief": 90.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 3,
+    "trial_index": 85,
+    "level_trial_index": 25,
+    "contextual_belief": 90.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 3,
+    "trial_index": 86,
+    "level_trial_index": 26,
+    "contextual_belief": 90.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 3,
+    "trial_index": 87,
+    "level_trial_index": 27,
+    "contextual_belief": 90.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 3,
+    "trial_index": 88,
+    "level_trial_index": 28,
+    "contextual_belief": 90.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Gemini 3 Pro",
+    "model_key": "Gemini3Pro",
+    "level": 3,
+    "trial_index": 89,
+    "level_trial_index": 29,
+    "contextual_belief": 90.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 1,
+    "trial_index": 0,
+    "level_trial_index": 0,
+    "contextual_belief": 20.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 1,
+    "trial_index": 1,
+    "level_trial_index": 1,
+    "contextual_belief": 20.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 1,
+    "trial_index": 2,
+    "level_trial_index": 2,
+    "contextual_belief": 20.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 1,
+    "trial_index": 3,
+    "level_trial_index": 3,
+    "contextual_belief": 20.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 1,
+    "trial_index": 4,
+    "level_trial_index": 4,
+    "contextual_belief": 20.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 1,
+    "trial_index": 5,
+    "level_trial_index": 5,
+    "contextual_belief": 20.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 1,
+    "trial_index": 6,
+    "level_trial_index": 6,
+    "contextual_belief": 20.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 1,
+    "trial_index": 7,
+    "level_trial_index": 7,
+    "contextual_belief": 20.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 1,
+    "trial_index": 8,
+    "level_trial_index": 8,
+    "contextual_belief": 20.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 1,
+    "trial_index": 9,
+    "level_trial_index": 9,
+    "contextual_belief": 20.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 1,
+    "trial_index": 10,
+    "level_trial_index": 10,
+    "contextual_belief": 20.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 1,
+    "trial_index": 11,
+    "level_trial_index": 11,
+    "contextual_belief": 20.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 1,
+    "trial_index": 12,
+    "level_trial_index": 12,
+    "contextual_belief": 20.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 1,
+    "trial_index": 13,
+    "level_trial_index": 13,
+    "contextual_belief": 20.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 1,
+    "trial_index": 14,
+    "level_trial_index": 14,
+    "contextual_belief": 20.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 1,
+    "trial_index": 15,
+    "level_trial_index": 15,
+    "contextual_belief": 20.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 1,
+    "trial_index": 16,
+    "level_trial_index": 16,
+    "contextual_belief": 20.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 1,
+    "trial_index": 17,
+    "level_trial_index": 17,
+    "contextual_belief": 20.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 1,
+    "trial_index": 18,
+    "level_trial_index": 18,
+    "contextual_belief": 20.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 1,
+    "trial_index": 19,
+    "level_trial_index": 19,
+    "contextual_belief": 20.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 1,
+    "trial_index": 20,
+    "level_trial_index": 20,
+    "contextual_belief": 30.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 1,
+    "trial_index": 21,
+    "level_trial_index": 21,
+    "contextual_belief": 20.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 1,
+    "trial_index": 22,
+    "level_trial_index": 22,
+    "contextual_belief": 20.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 1,
+    "trial_index": 23,
+    "level_trial_index": 23,
+    "contextual_belief": 20.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 1,
+    "trial_index": 24,
+    "level_trial_index": 24,
+    "contextual_belief": 20.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 1,
+    "trial_index": 25,
+    "level_trial_index": 25,
+    "contextual_belief": 20.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 1,
+    "trial_index": 26,
+    "level_trial_index": 26,
+    "contextual_belief": 30.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 1,
+    "trial_index": 27,
+    "level_trial_index": 27,
+    "contextual_belief": 20.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 1,
+    "trial_index": 28,
+    "level_trial_index": 28,
+    "contextual_belief": 20.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 1,
+    "trial_index": 29,
+    "level_trial_index": 29,
+    "contextual_belief": 30.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 2,
+    "trial_index": 30,
+    "level_trial_index": 0,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 2,
+    "trial_index": 31,
+    "level_trial_index": 1,
+    "contextual_belief": 95.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 2,
+    "trial_index": 32,
+    "level_trial_index": 2,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 2,
+    "trial_index": 33,
+    "level_trial_index": 3,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 2,
+    "trial_index": 34,
+    "level_trial_index": 4,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 2,
+    "trial_index": 35,
+    "level_trial_index": 5,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 2,
+    "trial_index": 36,
+    "level_trial_index": 6,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 2,
+    "trial_index": 37,
+    "level_trial_index": 7,
+    "contextual_belief": 90.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 2,
+    "trial_index": 38,
+    "level_trial_index": 8,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 2,
+    "trial_index": 39,
+    "level_trial_index": 9,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 2,
+    "trial_index": 40,
+    "level_trial_index": 10,
+    "contextual_belief": 95.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 2,
+    "trial_index": 41,
+    "level_trial_index": 11,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 2,
+    "trial_index": 42,
+    "level_trial_index": 12,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 2,
+    "trial_index": 43,
+    "level_trial_index": 13,
+    "contextual_belief": 95.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 2,
+    "trial_index": 44,
+    "level_trial_index": 14,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 2,
+    "trial_index": 45,
+    "level_trial_index": 15,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 2,
+    "trial_index": 46,
+    "level_trial_index": 16,
+    "contextual_belief": 65.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 2,
+    "trial_index": 47,
+    "level_trial_index": 17,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 2,
+    "trial_index": 48,
+    "level_trial_index": 18,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 2,
+    "trial_index": 49,
+    "level_trial_index": 19,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 2,
+    "trial_index": 50,
+    "level_trial_index": 20,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 2,
+    "trial_index": 51,
+    "level_trial_index": 21,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 2,
+    "trial_index": 52,
+    "level_trial_index": 22,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 2,
+    "trial_index": 53,
+    "level_trial_index": 23,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 2,
+    "trial_index": 54,
+    "level_trial_index": 24,
+    "contextual_belief": 65.0,
+    "risk_decision": 3
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 2,
+    "trial_index": 55,
+    "level_trial_index": 25,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 2,
+    "trial_index": 56,
+    "level_trial_index": 26,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 2,
+    "trial_index": 57,
+    "level_trial_index": 27,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 2,
+    "trial_index": 58,
+    "level_trial_index": 28,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 2,
+    "trial_index": 59,
+    "level_trial_index": 29,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 3,
+    "trial_index": 60,
+    "level_trial_index": 0,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 3,
+    "trial_index": 61,
+    "level_trial_index": 1,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 3,
+    "trial_index": 62,
+    "level_trial_index": 2,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 3,
+    "trial_index": 63,
+    "level_trial_index": 3,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 3,
+    "trial_index": 64,
+    "level_trial_index": 4,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 3,
+    "trial_index": 65,
+    "level_trial_index": 5,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 3,
+    "trial_index": 66,
+    "level_trial_index": 6,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 3,
+    "trial_index": 67,
+    "level_trial_index": 7,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 3,
+    "trial_index": 68,
+    "level_trial_index": 8,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 3,
+    "trial_index": 69,
+    "level_trial_index": 9,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 3,
+    "trial_index": 70,
+    "level_trial_index": 10,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 3,
+    "trial_index": 71,
+    "level_trial_index": 11,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 3,
+    "trial_index": 72,
+    "level_trial_index": 12,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 3,
+    "trial_index": 73,
+    "level_trial_index": 13,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 3,
+    "trial_index": 74,
+    "level_trial_index": 14,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 3,
+    "trial_index": 75,
+    "level_trial_index": 15,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 3,
+    "trial_index": 76,
+    "level_trial_index": 16,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 3,
+    "trial_index": 77,
+    "level_trial_index": 17,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 3,
+    "trial_index": 78,
+    "level_trial_index": 18,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 3,
+    "trial_index": 79,
+    "level_trial_index": 19,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 3,
+    "trial_index": 80,
+    "level_trial_index": 20,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 3,
+    "trial_index": 81,
+    "level_trial_index": 21,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 3,
+    "trial_index": 82,
+    "level_trial_index": 22,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 3,
+    "trial_index": 83,
+    "level_trial_index": 23,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 3,
+    "trial_index": 84,
+    "level_trial_index": 24,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 3,
+    "trial_index": 85,
+    "level_trial_index": 25,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 3,
+    "trial_index": 86,
+    "level_trial_index": 26,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 3,
+    "trial_index": 87,
+    "level_trial_index": 27,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 3,
+    "trial_index": 88,
+    "level_trial_index": 28,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "Qwen3 Max",
+    "model_key": "Qwen3Max",
+    "level": 3,
+    "trial_index": 89,
+    "level_trial_index": 29,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 1,
+    "trial_index": 0,
+    "level_trial_index": 0,
+    "contextual_belief": 75.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 1,
+    "trial_index": 1,
+    "level_trial_index": 1,
+    "contextual_belief": 78.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 1,
+    "trial_index": 2,
+    "level_trial_index": 2,
+    "contextual_belief": 75.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 1,
+    "trial_index": 3,
+    "level_trial_index": 3,
+    "contextual_belief": 72.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 1,
+    "trial_index": 4,
+    "level_trial_index": 4,
+    "contextual_belief": 78.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 1,
+    "trial_index": 5,
+    "level_trial_index": 5,
+    "contextual_belief": 82.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 1,
+    "trial_index": 6,
+    "level_trial_index": 6,
+    "contextual_belief": 78.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 1,
+    "trial_index": 7,
+    "level_trial_index": 7,
+    "contextual_belief": 78.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 1,
+    "trial_index": 8,
+    "level_trial_index": 8,
+    "contextual_belief": 74.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 1,
+    "trial_index": 9,
+    "level_trial_index": 9,
+    "contextual_belief": 72.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 1,
+    "trial_index": 10,
+    "level_trial_index": 10,
+    "contextual_belief": 82.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 1,
+    "trial_index": 11,
+    "level_trial_index": 11,
+    "contextual_belief": 72.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 1,
+    "trial_index": 12,
+    "level_trial_index": 12,
+    "contextual_belief": 72.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 1,
+    "trial_index": 13,
+    "level_trial_index": 13,
+    "contextual_belief": 78.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 1,
+    "trial_index": 14,
+    "level_trial_index": 14,
+    "contextual_belief": 82.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 1,
+    "trial_index": 15,
+    "level_trial_index": 15,
+    "contextual_belief": 78.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 1,
+    "trial_index": 16,
+    "level_trial_index": 16,
+    "contextual_belief": 72.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 1,
+    "trial_index": 17,
+    "level_trial_index": 17,
+    "contextual_belief": 78.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 1,
+    "trial_index": 18,
+    "level_trial_index": 18,
+    "contextual_belief": 78.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 1,
+    "trial_index": 19,
+    "level_trial_index": 19,
+    "contextual_belief": 72.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 1,
+    "trial_index": 20,
+    "level_trial_index": 20,
+    "contextual_belief": 72.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 1,
+    "trial_index": 21,
+    "level_trial_index": 21,
+    "contextual_belief": 72.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 1,
+    "trial_index": 22,
+    "level_trial_index": 22,
+    "contextual_belief": 78.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 1,
+    "trial_index": 23,
+    "level_trial_index": 23,
+    "contextual_belief": 66.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 1,
+    "trial_index": 24,
+    "level_trial_index": 24,
+    "contextual_belief": 72.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 1,
+    "trial_index": 25,
+    "level_trial_index": 25,
+    "contextual_belief": 72.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 1,
+    "trial_index": 26,
+    "level_trial_index": 26,
+    "contextual_belief": 84.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 1,
+    "trial_index": 27,
+    "level_trial_index": 27,
+    "contextual_belief": 78.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 1,
+    "trial_index": 28,
+    "level_trial_index": 28,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 1,
+    "trial_index": 29,
+    "level_trial_index": 29,
+    "contextual_belief": 82.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 2,
+    "trial_index": 30,
+    "level_trial_index": 0,
+    "contextual_belief": 96.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 2,
+    "trial_index": 31,
+    "level_trial_index": 1,
+    "contextual_belief": 88.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 2,
+    "trial_index": 32,
+    "level_trial_index": 2,
+    "contextual_belief": 92.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 2,
+    "trial_index": 33,
+    "level_trial_index": 3,
+    "contextual_belief": 92.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 2,
+    "trial_index": 34,
+    "level_trial_index": 4,
+    "contextual_belief": 90.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 2,
+    "trial_index": 35,
+    "level_trial_index": 5,
+    "contextual_belief": 92.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 2,
+    "trial_index": 36,
+    "level_trial_index": 6,
+    "contextual_belief": 92.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 2,
+    "trial_index": 37,
+    "level_trial_index": 7,
+    "contextual_belief": 90.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 2,
+    "trial_index": 38,
+    "level_trial_index": 8,
+    "contextual_belief": 92.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 2,
+    "trial_index": 39,
+    "level_trial_index": 9,
+    "contextual_belief": 96.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 2,
+    "trial_index": 40,
+    "level_trial_index": 10,
+    "contextual_belief": 92.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 2,
+    "trial_index": 41,
+    "level_trial_index": 11,
+    "contextual_belief": 88.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 2,
+    "trial_index": 42,
+    "level_trial_index": 12,
+    "contextual_belief": 92.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 2,
+    "trial_index": 43,
+    "level_trial_index": 13,
+    "contextual_belief": 88.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 2,
+    "trial_index": 44,
+    "level_trial_index": 14,
+    "contextual_belief": 88.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 2,
+    "trial_index": 45,
+    "level_trial_index": 15,
+    "contextual_belief": 92.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 2,
+    "trial_index": 46,
+    "level_trial_index": 16,
+    "contextual_belief": 93.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 2,
+    "trial_index": 47,
+    "level_trial_index": 17,
+    "contextual_belief": 92.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 2,
+    "trial_index": 48,
+    "level_trial_index": 18,
+    "contextual_belief": 92.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 2,
+    "trial_index": 49,
+    "level_trial_index": 19,
+    "contextual_belief": 94.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 2,
+    "trial_index": 50,
+    "level_trial_index": 20,
+    "contextual_belief": 95.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 2,
+    "trial_index": 51,
+    "level_trial_index": 21,
+    "contextual_belief": 92.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 2,
+    "trial_index": 52,
+    "level_trial_index": 22,
+    "contextual_belief": 92.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 2,
+    "trial_index": 53,
+    "level_trial_index": 23,
+    "contextual_belief": 92.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 2,
+    "trial_index": 54,
+    "level_trial_index": 24,
+    "contextual_belief": 92.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 2,
+    "trial_index": 55,
+    "level_trial_index": 25,
+    "contextual_belief": 92.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 2,
+    "trial_index": 56,
+    "level_trial_index": 26,
+    "contextual_belief": 88.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 2,
+    "trial_index": 57,
+    "level_trial_index": 27,
+    "contextual_belief": 92.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 2,
+    "trial_index": 58,
+    "level_trial_index": 28,
+    "contextual_belief": 92.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 2,
+    "trial_index": 59,
+    "level_trial_index": 29,
+    "contextual_belief": 92.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 3,
+    "trial_index": 60,
+    "level_trial_index": 0,
+    "contextual_belief": 86.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 3,
+    "trial_index": 61,
+    "level_trial_index": 1,
+    "contextual_belief": 92.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 3,
+    "trial_index": 62,
+    "level_trial_index": 2,
+    "contextual_belief": 84.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 3,
+    "trial_index": 63,
+    "level_trial_index": 3,
+    "contextual_belief": 82.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 3,
+    "trial_index": 64,
+    "level_trial_index": 4,
+    "contextual_belief": 88.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 3,
+    "trial_index": 65,
+    "level_trial_index": 5,
+    "contextual_belief": 88.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 3,
+    "trial_index": 66,
+    "level_trial_index": 6,
+    "contextual_belief": 92.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 3,
+    "trial_index": 67,
+    "level_trial_index": 7,
+    "contextual_belief": 85.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 3,
+    "trial_index": 68,
+    "level_trial_index": 8,
+    "contextual_belief": 90.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 3,
+    "trial_index": 69,
+    "level_trial_index": 9,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 3,
+    "trial_index": 70,
+    "level_trial_index": 10,
+    "contextual_belief": 92.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 3,
+    "trial_index": 71,
+    "level_trial_index": 11,
+    "contextual_belief": 92.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 3,
+    "trial_index": 72,
+    "level_trial_index": 12,
+    "contextual_belief": 92.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 3,
+    "trial_index": 73,
+    "level_trial_index": 13,
+    "contextual_belief": 86.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 3,
+    "trial_index": 74,
+    "level_trial_index": 14,
+    "contextual_belief": 92.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 3,
+    "trial_index": 75,
+    "level_trial_index": 15,
+    "contextual_belief": 78.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 3,
+    "trial_index": 76,
+    "level_trial_index": 16,
+    "contextual_belief": 86.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 3,
+    "trial_index": 77,
+    "level_trial_index": 17,
+    "contextual_belief": 92.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 3,
+    "trial_index": 78,
+    "level_trial_index": 18,
+    "contextual_belief": 86.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 3,
+    "trial_index": 79,
+    "level_trial_index": 19,
+    "contextual_belief": 84.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 3,
+    "trial_index": 80,
+    "level_trial_index": 20,
+    "contextual_belief": 92.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 3,
+    "trial_index": 81,
+    "level_trial_index": 21,
+    "contextual_belief": 82.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 3,
+    "trial_index": 82,
+    "level_trial_index": 22,
+    "contextual_belief": 92.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 3,
+    "trial_index": 83,
+    "level_trial_index": 23,
+    "contextual_belief": 90.0,
+    "risk_decision": 2
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 3,
+    "trial_index": 84,
+    "level_trial_index": 24,
+    "contextual_belief": 92.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 3,
+    "trial_index": 85,
+    "level_trial_index": 25,
+    "contextual_belief": 92.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 3,
+    "trial_index": 86,
+    "level_trial_index": 26,
+    "contextual_belief": 85.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 3,
+    "trial_index": 87,
+    "level_trial_index": 27,
+    "contextual_belief": 92.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 3,
+    "trial_index": 88,
+    "level_trial_index": 28,
+    "contextual_belief": 86.0,
+    "risk_decision": 1
+  },
+  {
+    "experiment": "CTD",
+    "model": "GPT 5.2",
+    "model_key": "GPT5.2",
+    "level": 3,
+    "trial_index": 89,
+    "level_trial_index": 29,
+    "contextual_belief": 85.0,
+    "risk_decision": 2
+  }
+]
