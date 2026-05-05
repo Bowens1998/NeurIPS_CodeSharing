@@ -1,7 +1,8 @@
 # NeurIPS 2026 — Reproducibility Package
 
-This repository contains all code and data needed to reproduce the main results
-reported in the paper.
+This repository contains all **code** and **sample data** needed to verify the
+analysis pipeline. The full dataset (N=100 trials/model/task, 12 models, 3 tasks)
+is available on HuggingFace — see the [Data requirement](#data-requirement) section.
 
 ---
 
@@ -9,22 +10,22 @@ reported in the paper.
 
 ```
 NeurIPS_CodeSharing/
-├── data/
+├── data/                         ← sample files only; full dataset on HuggingFace
 │   ├── frontier_models/
-│   │   ├── main_N100/          — LLM response data (N=100 trials/model/task)
-│   │   │   ├── DNC/            — 6 × DNC_{model}_N100.json
-│   │   │   ├── CTD/            — 6 × CTD_{model}_N100.json
-│   │   │   └── FIP/            — 6 × FIP_{model}_N100.json
-│   │   └── reliability_N90/    — reliability data (N=90/model/task)
-│   │       ├── DNC/            — 6 × {model}_90.json
-│   │       ├── CTD/            — 6 × {model}_90.json
-│   │       └── FIP/            — 6 × {model}_90.json
+│   │   ├── main_N100/          — 1 sample file per task (format illustration)
+│   │   │   ├── DNC/            — DNC_test_N100.json   (full: 6 × DNC_{model}_N100.json)
+│   │   │   ├── CTD/            — CTD_test_N100.json   (full: 6 × CTD_{model}_N100.json)
+│   │   │   └── FIP/            — FIP_test_N100.json   (full: 6 × FIP_{model}_N100.json)
+│   │   └── reliability_N90/    — 1 sample file per task
+│   │       ├── DNC/            — test_90.json   (full: 6 × {model}_90.json)
+│   │       ├── CTD/            — test_90.json
+│   │       └── FIP/            — test_90.json
 │   ├── earlier_models/
-│   │   ├── auc_N100/           — 6 earlier-gen models × 3 tasks × N=100 trials
-│   │   └── reliability_N90/    — reliability data for earlier-gen models
-│   └── human_data/             — human participant data (CSV)
-│       ├── test.csv            — 15-subject sample (format illustration)
-│       └── human_features.csv — full per-subject features (HuggingFace)
+│   │   ├── auc_N100/           — 1 sample per task  (full: 6 models × 3 tasks)
+│   │   └── reliability_N90/    — 1 sample per task
+│   └── human_data/
+│       └── test.csv            — 15-subject sample (format illustration)
+│                                 full dataset: human_features.csv on HuggingFace
 ├── experiments/
 │   ├── HumanExperimentConfig/  — browser-based interface for human participants
 │   │   ├── index.html          — participant portal (task hub)
