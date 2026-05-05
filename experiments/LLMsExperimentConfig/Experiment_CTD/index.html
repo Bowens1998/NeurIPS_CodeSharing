@@ -1,0 +1,592 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>CTD — Clinical Triage Decision (ESI-aligned)</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    :root {
+      --ink: #0f172a;
+      --muted: #64748b;
+      --line: #e5e7eb;
+      --bg: #fafafa;
+      --pri: #0ea5e9;
+      --act: #10b981;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      margin: 0;
+      color: var(--ink);
+      background: var(--bg);
+    }
+
+    header {
+      padding: 12px 16px;
+      background: #0f172a;
+      color: white;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    header .title {
+      font-weight: 800;
+      letter-spacing: 0.2px;
+    }
+
+    main {
+      padding: 16px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    #toolbar {
+      display: flex;
+      gap: 8px;
+      justify-content: center;
+      margin: 10px 0;
+      flex-wrap: wrap;
+    }
+
+    button {
+      padding: 10px 14px;
+      border-radius: 10px;
+      border: 1px solid #cbd5e1;
+      background: #f8fafc;
+      cursor: pointer;
+    }
+
+    button.primary {
+      background: var(--pri);
+      color: white;
+      border-color: var(--pri);
+    }
+
+    button:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    .modebtn.active {
+      background: var(--act);
+      color: #042;
+      border-color: #059669;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 14px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .panel h3 {
+      margin: 6px 0 10px 0;
+    }
+
+    .pill {
+      display: inline-block;
+      padding: 3px 8px;
+      border-radius: 999px;
+      background: #eef2ff;
+      color: #3730a3;
+      font-size: 12px;
+    }
+
+    .kpi {
+      display: flex;
+      gap: 12px;
+      margin: 6px 0;
+      flex-wrap: wrap;
+    }
+
+    .kpi div {
+      background: #f1f5f9;
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 6px 8px;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    #status {
+      text-align: center;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+
+    #log {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      color: #334155;
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 8px;
+      white-space: pre-wrap;
+      min-height: 48px;
+    }
+
+    fieldset {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 10px;
+    }
+
+    legend {
+      font-weight: 700;
+      color: #1f2937;
+    }
+
+    .dx-list {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 6px;
+      margin-top: 6px;
+    }
+
+    .row {
+      display: flex;
+      gap: 14px;
+    }
+
+    .col {
+      flex: 1;
+    }
+
+    .slider-wrap {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    input[type=range] {
+      width: 100%;
+    }
+
+    select,
+    input[type=number],
+    textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+    }
+
+    .hint {
+      font-size: 12px;
+      color: #6b7280;
+    }
+
+    .banner {
+      background: #fff7ed;
+      border: 1px solid #fed7aa;
+      color: #9a3412;
+      padding: 8px 10px;
+      border-radius: 10px;
+      margin: 8px 0;
+    }
+
+    .modal-backdrop {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5);
+      align-items: center;
+      justify-content: center;
+    }
+
+    .modal {
+      background: #fff;
+      width: min(520px, 92vw);
+      border-radius: 14px;
+      border: 1px solid var(--line);
+      padding: 16px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+    }
+
+    .modal h3 {
+      margin: 6px 0 10px 0;
+    }
+
+    .modal .row {
+      display: flex;
+      gap: 10px;
+    }
+
+    .modal button {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <span class="title">CTD</span> — Clinical Triage Decision
+    <span
+      style="margin-left: auto; background: #22c55e; color: white; padding: 4px 12px; border-radius: 20px; font-weight: 600; font-size: 14px;"
+      id="progressIndicator">0/0 finished</span>
+  </header>
+  <main>
+    <div id="status">Select a mode → press <b>Start</b>. Shortcuts: Space=Next, F=Finalize, R=Restart.</div>
+    <div id="toolbar">
+      <button id="humanBtn" class="modebtn active">Human Mode</button>
+      <button id="llmBtn" class="modebtn">LLM Mode</button>
+      <button id="startBtn" class="primary">Start</button>
+      <button id="autoRunBtn" class="primary" style="display:none; background:#8b5cf6; border-color:#7c3aed;">Auto Run
+        (API)</button>
+      <button id="advanceBtn" disabled>Next Tick (Space)</button>
+      <button id="finalizeBtn" disabled>Finalize ESI (F)</button>
+      <button id="restartBtn" disabled>Restart (R)</button>
+      <button id="downloadBtn" disabled>Download Data (JSON)</button>
+      <button id="analyzeBtn" disabled>Analyze Run</button>
+    </div>
+
+    <div class="card">
+      <h3>Runtime Controls</h3>
+      <div class="grid">
+        <div>
+          <label>Prevalence</label>
+          <select id="ctl_prevalence">
+            <option>low</option>
+            <option>high</option>
+          </select>
+          <div class="hint">Higher → more LSI / high-risk cases.</div>
+        </div>
+        <div>
+          <label>Measurement noise</label>
+          <select id="ctl_noise">
+            <option>low</option>
+            <option>high</option>
+          </select>
+          <div class="hint">Higher noise → harder factual inference.</div>
+        </div>
+        <div>
+          <label>Deterioration volatility</label>
+          <select id="ctl_vol">
+            <option>low</option>
+            <option>high</option>
+          </select>
+          <div class="hint">Higher volatility → more abrupt changes.</div>
+        </div>
+        <div>
+          <label>Max ticks per case</label>
+          <input id="ctl_maxticks" type="number" min="6" max="20" value="12">
+          <div class="hint">Hard cap: case auto-ends at this tick.</div>
+        </div>
+        <div>
+          <label>Trials per block</label>
+          <input id="ctl_trials" type="number" min="3" max="24" value="8">
+          <div class="hint">Blocks=1 in v2.3.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:12px;">
+      <h3>Parallel Execution Control (Headless)</h3>
+      <div class="grid">
+        <div>
+          <label>Parallel Groups</label>
+          <input id="parallelGroupCount" type="number" min="1" max="10" value="2">
+        </div>
+        <div>
+          <label>Trials per Group</label>
+          <input id="parallelTrialsPerGroup" type="number" min="1" max="100" value="5">
+        </div>
+        <div>
+          <label>API Timeout (sec)</label>
+          <input id="parallelTimeout" type="number" min="5" max="120" value="20">
+        </div>
+        <div>
+          <label>Max Retries</label>
+          <input id="parallelMaxRetries" type="number" min="0" max="5" value="3">
+        </div>
+      </div>
+      <div style="margin-top:10px; display:flex; gap:10px;">
+        <button id="parallelStartBtn" class="primary" style="flex:1;">Start Parallel Run</button>
+        <button id="parallelStopBtn" style="flex:1;" disabled>Stop</button>
+      </div>
+      <div id="parallelStatus" style="margin-top:8px; font-size:13px; color:#64748b;">Ready.</div>
+    </div>
+
+    <div class="grid" style="margin-top:12px;">
+      <div class="card panel">
+        <h3>Patient Profile</h3>
+        <div class="kpi">
+          <div>Age: <b id="Age">—</b></div>
+          <div>Comorbidities: <b id="Comorbid">—</b></div>
+          <div>Complaint: <b id="CC">—</b></div>
+          <div>True Dx: <b id="TrueDx">—</b></div>
+        </div>
+      </div>
+
+      <div class="card panel">
+        <h3>Vitals & Trends <span id="tickLbl" class="pill"></span></h3>
+        <div class="kpi">
+          <div>HR: <b id="HR">—</b></div>
+          <div>BP: <b id="BP">—</b></div>
+          <div>RR: <b id="RR">—</b></div>
+          <div>SpO2: <b id="SpO2">—</b></div>
+          <div>Temp: <b id="Temp">—</b></div>
+          <div>Mental: <b id="AVPU">—</b></div>
+        </div>
+        <div class="kpi">
+          <div>Trend: <span id="Trend">—</span></div>
+          <div>Flags: <span id="Flags">—</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid" style="margin-top:12px;">
+      <div class="card panel">
+        <h3>Factual belief</h3>
+        <fieldset>
+          <legend>Choose likely diagnosis (this tick)</legend>
+          <div id="dxList" class="dx-list"></div>
+          <div class="hint">Pick the single most likely diagnosis right now based on vitals & changes.</div>
+        </fieldset>
+      </div>
+      <div class="card panel">
+        <h3>Contextual belief</h3>
+        <div class="banner" id="ctxBanner" style="display:none;">Please update the slider if you feel the overall
+          situation changed.</div>
+        <fieldset>
+          <legend>Overall situation (continuous)</legend>
+          <div class="slider-wrap">
+            <span>Safe</span>
+            <input id="ctxSlider" type="range" min="0" max="100" value="0">
+            <span>Critical</span>
+          </div>
+          <div class="hint">Adjust this a few times per case. Current: <b id="ctxVal">0</b>/100</div>
+        </fieldset>
+      </div>
+      <button id="configApiBtn" style="background:#0ea5e9; color:white;">⚙️ API Settings</button>
+    </div>
+
+    <div class="card" id="llmPanel" style="display:none; margin-top:12px;">
+      <h3>LLM Interaction</h3>
+      <label>Prompt to model</label>
+      <textarea id="llmPrompt" readonly></textarea>
+      <div style="display:flex; gap:8px; margin:6px 0;">
+        <button id="copyPrompt">Copy Prompt</button>
+      </div>
+      <label>Paste LLM JSON response</label>
+      <textarea id="llmResp"
+        placeholder='{"BF":{"dx":"Respiratory failure"},"BC":{"ctx":72},"action":{"finalize_ESI":null},"rationale":"<=5000 tokens"}'></textarea>
+      <button id="applyLLM">Apply LLM Response</button>
+      <div class="hint">When ending a case, set {"action":{"finalize_ESI":1..5}}.</div>
+    </div>
+
+    <div style="margin-top:10px;" class="card">
+      <h3>Event Log</h3>
+      <div id="log"
+        style="max-height: 250px; overflow-y: auto; display: flex; flex-direction: column-reverse; background: #f8fafc; padding: 8px; border-radius: 6px; border: 1px solid #e2e8f0;">
+        —</div>
+    </div>
+
+    <div id="analysisPanel"
+      style="display:none; margin-top:20px; background:white; border:1px solid #cbd5e1; border-radius:8px; padding:16px;">
+      <h3 style="margin-top:0;">Analysis Results</h3>
+      <pre id="analysisOutput"
+        style="font-family:monospace; background:#f1f5f9; padding:10px; border-radius:6px; overflow-x:auto;"></pre>
+
+      <!-- Visualization area -->
+      <div id="analysisCharts" style="margin-top:20px; display:grid; grid-template-columns: 1fr 1fr; gap:20px;">
+        <div style="height:300px;">
+          <canvas id="chartAccuracy"></canvas>
+        </div>
+        <div style="height:300px;">
+          <canvas id="chartSchema"></canvas>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <div id="modalBg" class="modal-backdrop">
+    <div class="modal">
+      <h3>Finalize ESI</h3>
+      <p>Please assign an ESI level based on the entire case:</p>
+      <div class="row">
+        <select id="esiSelect">
+          <option value="1">1 — Immediate life-saving intervention</option>
+          <option value="2" selected>2 — High-risk / emergent</option>
+          <option value="3">3 — Stable, 2+ resources</option>
+          <option value="4">4 — Stable, one resource</option>
+          <option value="5">5 — Stable, no resources</option>
+        </select>
+      </div>
+      <div class="hint" id="ctxReqHint" style="margin-top:6px; display:none;">
+        Tip: You have few contextual updates. Consider adjusting the slider to reflect the overall situation before
+        confirming.
+      </div>
+      <button id="confirmESI" class="primary">Confirm</button>
+    </div>
+  </div>
+
+  <!-- API Configuration Modal (OpenAI / OpenRouter) -->
+  <div id="apiConfigModal"
+    style="position:fixed; inset:0; display:none; align-items:center; justify-content:center; background:rgba(0,0,0,0.45); z-index: 1000;">
+    <div
+      style="width:520px; background:white; padding:20px; border-radius:12px; box-shadow:0 12px 40px rgba(0,0,0,0.3); max-height: 90vh; overflow-y: auto;">
+      <h2 style="margin:0 0 16px 0;">⚙️ API Configuration (OpenRouter)</h2>
+
+      <div style="background:#eff6ff; border:1px solid #bfdbfe; border-radius:8px; padding:12px; margin-bottom:16px;">
+        <div style="font-size:13px; color:#1e40af; line-height:1.5;">
+          <b>📌 All models are accessed via OpenRouter</b><br>
+          Get your API key from <a href="https://openrouter.ai/keys" target="_blank"
+            style="color:#2563eb;">openrouter.ai/keys</a><br>
+          One key for all models: GPT, Claude, DeepSeek, Llama, Qwen, Mistral, etc.
+        </div>
+      </div>
+
+      <label style="display:block; margin:12px 0 6px; font-weight:600;">OpenRouter API Key:</label>
+      <input type="password" id="apiKeyInput" placeholder="sk-or-v1-..."
+        style="width:100%; padding:8px; border:1px solid #cbd5e1; border-radius:6px; font-family:monospace;">
+      <div style="font-size:12px; color:#64748b; margin-top:4px;">
+        Stored locally in browser. Never sent to our servers.
+      </div>
+
+      <label style="display:block; margin:12px 0 6px; font-weight:600;">Model:</label>
+      <select id="apiModelSelect" style="width:100%; padding:8px; border:1px solid #cbd5e1; border-radius:6px;">
+        <optgroup label="Free Models (No credits needed)">
+          <option value="google/gemini-2.0-flash-exp:free">Gemini 2.0 Flash (Free)</option>
+          <option value="meta-llama/llama-3.2-3b-instruct:free">Llama 3.2 3B (Free)</option>
+          <option value="deepseek/deepseek-r1-distill-llama-70b:free">DeepSeek R1 Distill (Free)</option>
+        </optgroup>
+        <optgroup label="OpenAI">
+          <option value="openai/gpt-4o">GPT-4o</option>
+          <option value="openai/gpt-4o-mini" selected>GPT-4o Mini</option>
+          <option value="openai/o1">o1</option>
+        </optgroup>
+        <optgroup label="Anthropic Claude">
+          <option value="anthropic/claude-3.5-sonnet">Claude 3.5 Sonnet</option>
+          <option value="anthropic/claude-3-opus">Claude 3 Opus</option>
+          <option value="anthropic/claude-3-haiku">Claude 3 Haiku</option>
+        </optgroup>
+        <optgroup label="DeepSeek">
+          <option value="deepseek/deepseek-chat">DeepSeek Chat</option>
+        </optgroup>
+        <optgroup label="Meta Llama">
+          <option value="meta-llama/llama-3.3-70b-instruct">Llama 3.3 70B</option>
+          <option value="meta-llama/llama-3.1-405b-instruct">Llama 3.1 405B</option>
+        </optgroup>
+        <optgroup label="Qwen">
+          <option value="qwen/qwen-2.5-72b-instruct">Qwen 2.5 72B</option>
+          <option value="qwen/qwen3-235b-a22b-2507">Qwen 3 (235B)</option>
+        </optgroup>
+        <optgroup label="Mistral">
+          <option value="mistralai/mistral-large">Mistral Large</option>
+        </optgroup>
+      </select>
+      <div style="margin-top:8px;">
+        <input type="text" id="customModelInput" placeholder="e.g. anthropic/claude-3-opus"
+          style="width:100%; padding:8px; border:1px solid #cbd5e1; border-radius:6px; display:none; font-size:13px;">
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+          <button type="button" id="toggleCustomModel"
+            style="background:none; border:none; color:#0ea5e9; cursor:pointer; padding:4px 0; font-size:12px; text-decoration:underline;">
+            ⚙️ Use custom model ID
+          </button>
+          <a href="https://openrouter.ai/models" target="_blank"
+            style="font-size:11px; color:#64748b; text-decoration:none;">
+            View all models →
+          </a>
+        </div>
+      </div>
+
+      <label style="display:block; margin:12px 0 6px; font-weight:600;">Temperature: <span
+          id="tempVal">0.1</span></label>
+      <input type="range" id="apiTempSlider" min="0" max="2" step="0.1" value="0.1" style="width:100%;">
+      <div style="font-size:12px; color:#64748b;">Lower = more deterministic, Higher = more creative</div>
+
+      <div style="display:flex; gap:8px; margin-top:20px;">
+        <button id="saveApiConfig"
+          style="flex:1; background:#10b981; color:white; padding:10px; border-radius:8px; border:none; cursor:pointer; font-weight:600;">💾
+          Save</button>
+        <button id="testApiBtn"
+          style="flex:1; background:#0ea5e9; color:white; padding:10px; border-radius:8px; border:none; cursor:pointer;">🧪
+          Test API</button>
+        <button id="closeApiConfig"
+          style="flex:1; padding:10px; border-radius:8px; border:1px solid #cbd5e1; background:white; cursor:pointer;">Close</button>
+      </div>
+
+      <div id="apiTestResult"
+        style="margin-top:12px; padding:8px; border-radius:6px; display:none; white-space: pre-wrap; font-family:monospace; font-size:12px;">
+      </div>
+    </div>
+  </div>
+
+  <!-- Parallel Execution Monitor -->
+  <div id="parallelMonitorSection" class="card"
+    style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%, -50%); width:600px; max-width:95vw; z-index:2000; box-shadow:0 25px 50px -12px rgba(0,0,0,0.25);">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+      <h3 style="margin:0;">Parallel Execution Monitor</h3>
+      <button id="closeParallelMonitor" style="padding:4px 8px; font-size:12px;">Close</button>
+    </div>
+    <div id="parallelStats" style="font-weight:bold; margin-bottom:10px; color:#334155;">Initializing...</div>
+    <div id="parallelWorkers"
+      style="max-height:300px; overflow-y:auto; display:grid; grid-template-columns:1fr; gap:8px;">
+      <!-- Worker cards injected here -->
+    </div>
+    <div style="margin-top:12px; text-align:right;">
+      <button id="parallelDownloadBtn" class="primary" disabled>Download Combined Results</button>
+    </div>
+  </div>
+
+  <style>
+    .worker-card {
+      border: 1px solid #e2e8f0;
+      background: #f8fafc;
+      padding: 8px;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .worker-id {
+      font-weight: bold;
+      font-family: monospace;
+      background: #e0f2fe;
+      color: #0369a1;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 12px;
+    }
+
+    .worker-progress {
+      flex: 1;
+    }
+
+    .worker-progress progress {
+      width: 100%;
+      height: 12px;
+    }
+
+    .worker-status {
+      font-size: 12px;
+      color: #64748b;
+      width: 80px;
+      text-align: right;
+    }
+  </style>
+
+  <script src="./js/driver_tpb_esi_v2_3.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,529 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Financial Investment Task — v1.1.1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root {
+      --ink: #0f172a;
+      --muted: #64748b;
+      --line: #e5e7eb;
+      --bg: #f8fafc;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      margin: 0;
+      color: var(--ink);
+      background: var(--bg);
+    }
+
+    header {
+      background: #0f172a;
+      color: white;
+      padding: 12px 16px;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 16px;
+    }
+
+    h3 {
+      margin: 10px 0;
+    }
+
+    .row {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .col {
+      flex: 1;
+      min-width: 260px;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 12px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
+    }
+
+    #toolbar {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin: 10px 0;
+    }
+
+    button {
+      padding: 8px 12px;
+      border-radius: 8px;
+      border: 1px solid #cbd5e1;
+      background: white;
+      cursor: pointer;
+    }
+
+    button.primary {
+      background: #0ea5e9;
+      color: white;
+      border-color: #0ea5e9;
+    }
+
+    button:disabled {
+      opacity: .6;
+      cursor: not-allowed;
+    }
+
+    .controls {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(260px, 1fr));
+      gap: 12px;
+    }
+
+    .control {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 10px;
+      background: white;
+    }
+
+    .control label {
+      font-weight: 600;
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    .val {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    input[type=range],
+    input[type=number] {
+      width: 100%;
+    }
+
+    .muted {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .grid3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+
+    .radio-row {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .alloc {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .alloc input[type=range] {
+      width: 160px;
+    }
+
+    .pill {
+      display: inline-block;
+      padding: 3px 8px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    #status {
+      margin-top: 8px;
+      color: var(--muted);
+    }
+
+    #llmPanel {
+      display: none;
+    }
+
+    textarea {
+      width: 100%;
+      min-height: 130px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+
+    .sep {
+      height: 1px;
+      background: var(--line);
+      margin: 12px 0;
+    }
+
+    .spark-wrap {
+      position: relative;
+    }
+
+    .axis-label {
+      font-size: 11px;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+
+    canvas.spark {
+      width: 100%;
+      height: 120px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: white;
+    }
+
+    .tickbar {
+      position: absolute;
+      left: 4px;
+      top: 4px;
+      bottom: 4px;
+      width: 40px;
+      pointer-events: none;
+    }
+
+    #error {
+      display: none;
+      background: #fee2e2;
+      color: #991b1b;
+      border: 1px solid #fecaca;
+      padding: 10px;
+      border-radius: 8px;
+      margin-top: 8px;
+    }
+
+    /* Parallel Monitor Styles */
+    .worker-card {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      padding: 8px 12px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .worker-id { font-weight: 600; min-width: 70px; }
+    .worker-progress { flex: 1; }
+    .worker-progress progress { width: 100%; height: 16px; border-radius: 8px; overflow: hidden; }
+    .worker-status { font-size: 12px; min-width: 140px; text-align: right; color: #64748b; }
+    .worker-progress progress::-webkit-progress-bar { background: #e2e8f0; }
+    .worker-progress progress::-webkit-progress-value { background: #22c55e; }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div><b>Financial Investment Task — v1.1.1</b> • Factual → Contextual → Schematic</div>
+  </header>
+  <main>
+    <div id="status">Loading…</div>
+    <div id="error"></div>
+    <div id="toolbar">
+      <button id="humanBtn" disabled>Human Mode</button>
+      <button id="llmBtn" disabled>LLM Mode</button>
+      <button id="startBtn" class="primary" disabled>Start</button>
+      <button id="downloadBtn" disabled>Download Log (JSON)</button>
+      <button id="configApiBtn" style="background:#0ea5e9; color:white;">⚙️ API Settings</button>
+    </div>
+
+    <div class="card">
+      <h3>Runtime Controls</h3>
+      <div class="controls">
+        <div class="control">
+          <label>Trials <span class="val" id="v_trials"></span></label>
+          <input id="T_trials" type="range" min="6" max="100" step="2">
+        </div>
+        <div class="control">
+          <label>Window Length (W) <span class="val" id="v_W"></span></label>
+          <input id="W_window" type="range" min="40" max="200" step="5">
+        </div>
+        <div class="control">
+          <label>Trend Threshold (slope) <span class="val" id="v_thr"></span></label>
+          <input id="trend_thresh" type="range" min="0.005" max="0.06" step="0.005">
+        </div>
+        <div class="control">
+          <label>Calm→Turb prob <span class="val" id="v_ct"></span></label>
+          <input id="p_calm_to_turb" type="range" min="0.02" max="0.40" step="0.01">
+        </div>
+        <div class="control">
+          <label>Turb→Calm prob <span class="val" id="v_tc"></span></label>
+          <input id="p_turb_to_calm" type="range" min="0.02" max="0.40" step="0.01">
+        </div>
+        <div class="control">
+          <label>ρ (calm) <span class="val" id="v_rhoc"></span></label>
+          <input id="rho_calm" type="range" min="0.00" max="0.60" step="0.01">
+        </div>
+        <div class="control">
+          <label>ρ (turb) <span class="val" id="v_rhot"></span></label>
+          <input id="rho_turb" type="range" min="0.10" max="0.95" step="0.01">
+        </div>
+        <div class="control">
+          <label>σ (calm): L / M / H</label>
+          <div class="row">
+            <input id="sigma_calm_L" type="number" step="0.001" min="0.001">
+            <input id="sigma_calm_M" type="number" step="0.001" min="0.001">
+            <input id="sigma_calm_H" type="number" step="0.001" min="0.001">
+          </div>
+        </div>
+        <div class="control">
+          <label>σ (turb): L / M / H</label>
+          <div class="row">
+            <input id="sigma_turb_L" type="number" step="0.001" min="0.001">
+            <input id="sigma_turb_M" type="number" step="0.001" min="0.001">
+            <input id="sigma_turb_H" type="number" step="0.001" min="0.001">
+          </div>
+          </div>
+        </div>
+      </div>
+      <div style="margin-top:8px;" class="muted">Means μ_L=μ_M=μ_H are fixed and equal.</div>
+      
+      <!-- Parallel Execution Control -->
+      <div class="row" style="margin-top:12px;">
+        <div class="col card" style="background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%); border-color: #86efac;">
+          <h3 style="color: #166534;">🚀 Parallel Execution</h3>
+          <div class="controls">
+             <div class="control">
+               <label>Parallel Groups</label>
+               <input id="parallelGroupCount" type="number" min="1" max="20" value="5">
+             </div>
+             <div class="control">
+               <label>Trials per Group</label>
+               <input id="parallelTrialsPerGroup" type="number" min="1" max="100" value="10">
+             </div>
+             <div class="control">
+               <label>API Timeout (sec)</label>
+               <input id="parallelTimeout" type="number" min="30" max="180" value="60">
+             </div>
+             <div class="control">
+               <label>Max Retries</label>
+               <input id="parallelMaxRetries" type="number" min="1" max="10" value="5">
+             </div>
+          </div>
+          <div style="display:flex; gap:8px; margin-top:12px;">
+             <button id="parallelStartBtn" style="background:#16a34a; color:white; border:none; font-weight:600; flex:1;">▶️ Start Parallel Run</button>
+             <button id="parallelStopBtn" style="background:#dc2626; color:white; border:none; font-weight:600; flex:1;" disabled>⏹️ Stop All</button>
+          </div>
+        </div>
+      </div>
+
+    <div class="row" style="margin-top:12px;">
+      <div class="col card">
+        <h3>Stage A — Factual (per-asset trend)</h3>
+        <div class="grid3">
+          <div>
+            <div class="pill">Low risk (L)</div>
+            <div class="spark-wrap">
+              <canvas id="cL" class="spark" width="320" height="120"></canvas>
+              <div id="ticksL" class="tickbar"></div>
+            </div>
+            <div class="axis-label">Δ% vs. time (steps)</div>
+            <div class="radio-row">
+              <label><input type="radio" name="trendL" value="up"> up</label>
+              <label><input type="radio" name="trendL" value="flat" checked> flat</label>
+              <label><input type="radio" name="trendL" value="down"> down</label>
+            </div>
+            <div>Confidence (0–100) <input id="confL" type="range" min="0" max="100" value="50"></div>
+          </div>
+          <div>
+            <div class="pill">Medium risk (M)</div>
+            <div class="spark-wrap">
+              <canvas id="cM" class="spark" width="320" height="120"></canvas>
+              <div id="ticksM" class="tickbar"></div>
+            </div>
+            <div class="axis-label">Δ% vs. time (steps)</div>
+            <div class="radio-row">
+              <label><input type="radio" name="trendM" value="up"> up</label>
+              <label><input type="radio" name="trendM" value="flat" checked> flat</label>
+              <label><input type="radio" name="trendM" value="down"> down</label>
+            </div>
+            <div>Confidence (0–100) <input id="confM" type="range" min="0" max="100" value="50"></div>
+          </div>
+          <div>
+            <div class="pill">High risk (H)</div>
+            <div class="spark-wrap">
+              <canvas id="cH" class="spark" width="320" height="120"></canvas>
+              <div id="ticksH" class="tickbar"></div>
+            </div>
+            <div class="axis-label">Δ% vs. time (steps)</div>
+            <div class="radio-row">
+              <label><input type="radio" name="trendH" value="up"> up</label>
+              <label><input type="radio" name="trendH" value="flat" checked> flat</label>
+              <label><input type="radio" name="trendH" value="down"> down</label>
+            </div>
+            <div>Confidence (0–100) <input id="confH" type="range" min="0" max="100" value="50"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col card">
+        <h3>Stage B — Contextual (market risk)</h3>
+        <div>How risky does the market feel right now?</div>
+        <div style="display:flex; gap:10px; align-items:center; margin-top:6px;">
+          <span class="muted">calm</span>
+          <input id="ctxRisk" type="range" min="0" max="100" value="50">
+          <span class="muted">turbulent</span>
+        </div>
+        <div class="muted" id="ctxLabel">reported: 50/100</div>
+        <div class="sep"></div>
+        <h3>Stage C — Schematic (portfolio allocation)</h3>
+        <div class="alloc"><span class="pill">L</span><input id="wL" type="range" min="0" max="100" step="5"
+            value="33"><span id="vwL">33%</span></div>
+        <div class="alloc"><span class="pill">M</span><input id="wM" type="range" min="0" max="100" step="5"
+            value="33"><span id="vwM">33%</span></div>
+        <div class="alloc"><span class="pill">H</span><input id="wH" type="range" min="0" max="100" step="5"
+            value="34"><span id="vwH">34%</span></div>
+        <div class="muted">Sum is enforced to 100%. Adjusting any slider rebalances the other two proportionally.</div>
+        <div style="margin-top:10px;">
+          <button id="submitTrial" class="primary">Submit Trial</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="llmPanel" class="card" style="margin-top:12px;">
+      <div class="row">
+        <div class="col">
+          <h3>LLM Prompt (copy)</h3>
+          <textarea id="llmPrompt" readonly></textarea>
+          <div style="display:flex; gap:8px; margin-top:8px;">
+            <button id="copyPrompt">Copy Prompt</button>
+            <button id="autoRunBtn" style="background:#10b981; color:white; display:none;">🤖 Auto Run (API)</button>
+            <button id="applyLLM">Apply LLM Response</button>
+          </div>
+          <div id="apiStatus"
+            style="margin-top:8px; padding:6px; background:#f1f5f9; border-radius:4px; font-size:13px; color:#475569; display:none;">
+          </div>
+        </div>
+        <div class="col">
+          <h3>Paste LLM JSON Here</h3>
+          <textarea id="llmResponse"
+            placeholder='{"factual":{"L":{"trend":"up","conf":70},"M":...},"context":{"risk":78},"alloc":{"L":40,"M":40,"H":20}}'></textarea>
+          <div class="muted">We validate keys and normalize allocations.</div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Parallel Execution Monitor -->
+  <div id="parallelMonitorSection" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.8); z-index:2000; overflow-y:auto; padding:20px;">
+    <div style="max-width:800px; margin:0 auto; background:white; border-radius:12px; padding:20px;">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:16px;">
+        <h2 style="margin:0;">🚀 Parallel Execution Monitor</h2>
+        <button id="closeParallelMonitor" style="padding:6px 12px; cursor:pointer;">Close / Background</button>
+      </div>
+      
+      <div id="parallelStats" style="margin-bottom:12px; padding:10px; background:#f1f5f9; border-radius:8px; font-weight:500;">
+        Ready to start.
+      </div>
+
+      <div id="parallelWorkers" style="display:flex; flex-direction:column; gap:8px; max-height:400px; overflow-y:auto; margin-bottom:16px;">
+        <!-- Worker cards will be injected here -->
+      </div>
+
+      <div style="text-align:center;">
+        <button id="parallelDownloadBtn" disabled style="background:#22c55e; color:white; padding:12px 24px; font-size:16px; font-weight:600;">💾 Download Results (JSON)</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- API Configuration Modal (OpenRouter) -->
+  <div id="apiConfigModal"
+    style="position:fixed; inset:0; display:none; align-items:center; justify-content:center; background:rgba(0,0,0,0.45); z-index: 1000;">
+    <div
+      style="width:520px; background:white; padding:20px; border-radius:12px; box-shadow:0 12px 40px rgba(0,0,0,0.3); max-height: 90vh; overflow-y: auto;">
+      <h2 style="margin:0 0 16px 0;">⚙️ API Configuration (OpenRouter)</h2>
+
+      <div style="background:#eff6ff; border:1px solid #bfdbfe; border-radius:8px; padding:12px; margin-bottom:16px;">
+        <div style="font-size:13px; color:#1e40af; line-height:1.5;">
+          <b>📌 All models are accessed via OpenRouter</b><br>
+          Get your API key from <a href="https://openrouter.ai/keys" target="_blank"
+            style="color:#2563eb;">openrouter.ai/keys</a><br>
+          One key for all models: GPT, Claude, DeepSeek, Llama, Qwen, etc.
+        </div>
+      </div>
+
+      <label style="display:block; margin:12px 0 6px; font-weight:600;">OpenRouter API Key:</label>
+      <input type="password" id="apiKeyInput" placeholder="sk-or-v1-..."
+        style="width:100%; padding:8px; border:1px solid #cbd5e1; border-radius:6px; font-family:monospace; box-sizing:border-box;">
+      <div style="font-size:12px; color:#64748b; margin-top:4px;">Stored locally. Never sent to our servers.</div>
+
+      <label style="display:block; margin:16px 0 6px; font-weight:600;">
+        <input type="checkbox" id="useApiCheckbox"> Enable Auto Mode (Use API automatically)
+      </label>
+
+      <label style="display:block; margin:12px 0 6px; font-weight:600;">Model:</label>
+      <select id="apiModelSelect" style="width:100%; padding:8px; border:1px solid #cbd5e1; border-radius:6px;">
+        <optgroup label="OpenAI">
+          <option value="openai/gpt-4o">GPT-4o</option>
+          <option value="openai/gpt-4o-mini" selected>GPT-4o Mini</option>
+          <option value="openai/o1">o1</option>
+        </optgroup>
+        <optgroup label="Anthropic">
+          <option value="anthropic/claude-3.5-sonnet">Claude 3.5 Sonnet</option>
+          <option value="anthropic/claude-3-haiku">Claude 3 Haiku</option>
+        </optgroup>
+        <optgroup label="DeepSeek">
+          <option value="deepseek/deepseek-chat">DeepSeek Chat</option>
+        </optgroup>
+        <optgroup label="Meta">
+          <option value="meta-llama/llama-3.3-70b-instruct">Llama 3.3 70B</option>
+        </optgroup>
+        <optgroup label="Google">
+          <option value="google/gemini-2.0-flash-001">Gemini 2.0 Flash</option>
+          <option value="google/gemini-flash-1.5">Gemini 1.5 Flash</option>
+        </optgroup>
+      </select>
+
+      <div style="margin-top:8px;">
+        <input type="text" id="customModelInput" placeholder="e.g. google/gemini-2.0-pro-exp-02-05"
+          style="width:100%; padding:8px; border:1px solid #cbd5e1; border-radius:6px; display:none; font-size:13px; box-sizing:border-box;">
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+          <button type="button" id="toggleCustomModel"
+            style="background:none; border:none; color:#0ea5e9; cursor:pointer; padding:4px 0; font-size:12px; text-decoration:underline;">
+            ⚙️ Use custom model ID
+          </button>
+          <a href="https://openrouter.ai/models" target="_blank"
+            style="font-size:11px; color:#64748b; text-decoration:none;">
+            View all models →
+          </a>
+        </div>
+      </div>
+
+      <label style="display:block; margin:12px 0 6px; font-weight:600;">Temperature: <span
+          id="tempVal">0.7</span></label>
+      <input type="range" id="apiTempSlider" min="0" max="2" step="0.1" value="0.7" style="width:100%;">
+      <div style="font-size:12px; color:#64748b;">Lower = more deterministic, Higher = creativity.</div>
+
+      <label style="display:block; margin:12px 0 6px; font-weight:600;">Concurrency: <span id="concVal">1</span></label>
+      <input type="range" id="apiConcurrency" min="1" max="10" step="1" value="1" style="width:100%;">
+      <div style="font-size:12px; color:#64748b;">Parallel requests. Higher = faster but watch rate limits.</div>
+
+      <div style="display:flex; gap:8px; margin-top:20px;">
+        <button id="saveApiConfig"
+          style="flex:1; background:#10b981; color:white; padding:10px; border-radius:8px; border:none; cursor:pointer; font-weight:600;">💾
+          Save</button>
+        <button id="testApiBtn"
+          style="flex:1; background:#0ea5e9; color:white; padding:10px; border-radius:8px; border:none; cursor:pointer;">🧪
+          Test API</button>
+        <button id="closeApiConfig"
+          style="flex:1; padding:10px; border-radius:8px; border:1px solid #cbd5e1; background:white; cursor:pointer;">Close</button>
+      </div>
+      <div id="apiTestResult" style="margin-top:12px; padding:8px; border-radius:6px; display:none;"></div>
+    </div>
+  </div>
+
+  <script src="./js/app_v111.js"></script>
+</body>
+
+</html>

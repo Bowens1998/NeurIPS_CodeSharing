@@ -1,0 +1,519 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>DNC — Drone Navigation Control</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    body {
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fafafa;
+    }
+
+    header {
+      padding: 12px 16px;
+      background: #0f172a;
+      color: white;
+      display: flex;
+      gap: 12px;
+      align-items: center;
+    }
+
+    main {
+      padding: 16px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    #grid {
+      display: grid;
+      gap: 2px;
+      margin: 12px auto;
+      width: max-content;
+    }
+
+    .cell {
+      box-sizing: border-box;
+      border: 1px solid #ddd;
+      background: #fff;
+    }
+
+    .wall {
+      background: #3f3f46;
+    }
+
+    .start {
+      background: #cce5ff;
+    }
+
+    .goal {
+      background: #d4edda;
+    }
+
+    .agent {
+      background: #ffcc00;
+      border: 2px solid #aa8800;
+    }
+
+    #hud {
+      text-align: center;
+      margin-top: 8px;
+      color: #0f172a;
+    }
+
+    #status {
+      text-align: center;
+      color: #64748b;
+    }
+
+    #toolbar {
+      display: flex;
+      gap: 8px;
+      justify-content: center;
+      margin: 10px 0;
+      flex-wrap: wrap;
+    }
+
+    button {
+      padding: 8px 12px;
+      border-radius: 8px;
+      border: 1px solid #cbd5e1;
+      background: #f8fafc;
+      cursor: pointer;
+    }
+
+    #llmPanel {
+      display: none;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    textarea {
+      width: 100%;
+      min-height: 130px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+
+    .row {
+      display: flex;
+      gap: 10px;
+    }
+
+    .col {
+      flex: 1;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 12px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
+    }
+
+    .battery {
+      width: 220px;
+      height: 14px;
+      border: 1px solid #94a3b8;
+      border-radius: 8px;
+      overflow: hidden;
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 8px;
+    }
+
+    .battery>div {
+      height: 100%;
+      background: #22c55e;
+      width: 100%;
+      transition: width 0.2s;
+    }
+
+    /* Modal */
+    #surveyModal {
+      position: fixed;
+      inset: 0;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      background: rgba(0, 0, 0, 0.45);
+    }
+
+    #surveyCard {
+      width: 420px;
+      background: white;
+      padding: 16px;
+      border-radius: 12px;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+    }
+
+    label {
+      display: block;
+      margin: 8px 0 6px;
+      font-weight: 600;
+    }
+
+    input[type=range] {
+      width: 100%;
+    }
+
+    .muted {
+      color: #64748b;
+      font-size: 12px;
+    }
+
+    .chips {
+      display: flex;
+      gap: 8px;
+      margin: 6px 0 10px;
+      flex-wrap: wrap;
+    }
+
+    .chip {
+      padding: 6px 10px;
+      border: 1px solid #cbd5e1;
+      border-radius: 999px;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .chip.active {
+      background: #0ea5e9;
+      color: white;
+      border-color: #0ea5e9;
+    }
+
+    /* Controls grid */
+    #controls {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(250px, 1fr));
+      gap: 12px;
+      margin: 12px 0;
+    }
+
+    .ctl {
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 12px;
+    }
+
+    .ctl h4 {
+      margin: 0 0 8px 0;
+      font-size: 14px;
+      color: #0f172a;
+    }
+
+    .ctl .rowline {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .ctl .val {
+      min-width: 48px;
+      text-align: right;
+      color: #0f172a;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div><b>Drift–Safety Box</b> — Hard Mode (v6) + Live Controls</div>
+  </header>
+  <main>
+    <div id="status">Adjust parameters below, choose mode, and press Start.</div>
+
+    <div id="controls">
+      <div class="ctl">
+        <h4>Trial & Grid</h4>
+        <div class="rowline">
+          <label>Max steps</label>
+          <input id="ctl_max_steps" type="range" min="40" max="120" step="1" value="100">
+          <div class="val"><span id="val_max_steps">100</span></div>
+        </div>
+        <div class="rowline">
+          <label>Grid columns</label>
+          <input id="ctl_cols" type="range" min="12" max="30" step="1" value="20">
+          <div class="val"><span id="val_cols">20</span></div>
+        </div>
+        <div class="rowline">
+          <label>Trials/Block</label>
+          <input id="ctl_trials" type="number" min="1" max="50" value="100" style="width:60px; padding:4px;">
+        </div>
+      </div>
+
+      <div class="ctl">
+        <h4>Battery</h4>
+        <div class="rowline">
+          <label>Drain per step</label>
+          <input id="ctl_drain_step" type="range" min="0.5" max="4.0" step="0.1" value="1.0">
+          <div class="val"><span id="val_drain_step">1.0</span></div>
+        </div>
+        <div class="rowline">
+          <label>Drain per collision</label>
+          <input id="ctl_drain_coll" type="range" min="0" max="12" step="0.5" value="2.0">
+          <div class="val"><span id="val_drain_coll">2.0</span></div>
+        </div>
+        <div class="rowline">
+          <label>Urgency extra drain</label>
+          <input id="ctl_urgency" type="range" min="0.0" max="2.0" step="0.1" value="0.5">
+          <div class="val"><span id="val_urgency">0.5</span></div>
+        </div>
+      </div>
+
+      <div class="ctl">
+        <h4>Wind</h4>
+        <div class="rowline">
+          <label>Volatility (low)</label>
+          <input id="ctl_vol_low" type="range" min="0.0" max="0.8" step="0.01" value="0.10">
+          <div class="val"><span id="val_vol_low">0.10</span></div>
+        </div>
+        <div class="rowline">
+          <label>Volatility (high)</label>
+          <input id="ctl_vol_high" type="range" min="0.0" max="0.8" step="0.01" value="0.10">
+          <div class="val"><span id="val_vol_high">0.10</span></div>
+        </div>
+        <div class="rowline">
+          <label>Gust rate</label>
+          <input id="ctl_gust_rate" type="range" min="0.0" max="0.8" step="0.01" value="0.10">
+          <div class="val"><span id="val_gust_rate">0.10</span></div>
+        </div>
+        <div class="rowline">
+          <label>Bias by drift</label>
+          <input id="ctl_bias" type="range" min="0.0" max="0.5" step="0.01" value="0.10">
+          <div class="val"><span id="val_bias">0.10</span></div>
+        </div>
+      </div>
+
+      <div class="ctl">
+        <h4>Map Difficulty</h4>
+        <div class="rowline">
+          <label>Dense wall prob</label>
+          <input id="ctl_dense" type="range" min="0.05" max="0.4" step="0.01" value="0.10">
+          <div class="val"><span id="val_dense">0.10</span></div>
+        </div>
+        <div class="rowline">
+          <label>Sparse wall prob</label>
+          <input id="ctl_sparse" type="range" min="0.02" max="0.3" step="0.01" value="0.10">
+          <div class="val"><span id="val_sparse">0.10</span></div>
+        </div>
+        <div class="rowline">
+          <label>Corridor obstacle keep</label>
+          <input id="ctl_corr_keep" type="range" min="0.00" max="0.7" step="0.01" value="0.10">
+          <div class="val"><span id="val_corr_keep">0.10</span></div>
+        </div>
+      </div>
+
+      <div class="ctl">
+        <h4>Drift Settings</h4>
+        <div class="rowline">
+          <label>Drift Range (+/-)</label>
+          <input id="ctl_drift_range" type="range" min="0" max="5" step="1" value="1">
+          <div class="val"><span id="val_drift_range">1</span></div>
+        </div>
+        <div class="rowline">
+          <label>Drift Probability</label>
+          <input id="ctl_drift_prob" type="range" min="0.0" max="1.0" step="0.05" value="0.1">
+          <div class="val"><span id="val_drift_prob">0.1</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="toolbar">
+      <button id="humanBtn">Human Mode</button>
+      <button id="llmBtn">LLM Mode</button>
+      <button id="startBtn">Start</button>
+      <button id="downloadBtn" disabled>Download Data (JSON)</button>
+      <button id="analyzeBtn" style="background:#8b5cf6; color:white;" disabled>📊 Analyze Data</button>
+      <button id="configApiBtn" style="background:#0ea5e9; color:white;">⚙️ API Settings</button>
+    </div>
+
+    <div id="hud"></div>
+    <div id="grid"></div>
+
+    <div id="llmPanel" class="card">
+      <div id="apiStatus"
+        style="padding:8px; background:#f1f5f9; border-radius:6px; text-align:center; font-weight:600; color:#475569; margin-bottom:12px;">
+        Ready
+      </div>
+      <div class="row">
+        <div class="col">
+          <h3>Step Prompt → Copy to ChatGPT</h3>
+          <textarea id="llmPrompt" readonly></textarea>
+          <div style="display:flex; gap:8px; margin-top:8px;">
+            <button id="copyPrompt">📋 Copy Prompt</button>
+            <button id="autoRunBtn" style="background:#10b981; color:white; display:none;">🤖 Auto Run (API)</button>
+            <button id="nextStep">✓ Apply Manual Response</button>
+          </div>
+        </div>
+        <div class="col">
+          <h3>LLM Response (Manual or API)</h3>
+          <textarea id="llmResponse" placeholder='{"action":"RIGHT","rationale":"..."}'></textarea>
+          <div class="muted">
+            Actions: "UP","DOWN","LEFT","RIGHT". API mode auto-fills this.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align:center; margin-top:10px; color:#475569;">
+      Reach the green goal (right). Gray = walls. Yellow = drone.
+    </div>
+  </main>
+
+  <!-- Analysis Results Modal -->
+  <div id="analysisModal"
+    style="position:fixed; inset:0; display:none; align-items:center; justify-content:center; background:rgba(0,0,0,0.45); z-index: 1000;">
+    <div
+      style="width:800px; background:white; padding:20px; border-radius:12px; box-shadow:0 12px 40px rgba(0,0,0,0.3); max-height: 90vh; overflow-y: auto;">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:16px;">
+        <h2 style="margin:0;">📊 Data Analysis</h2>
+        <button id="closeAnalysis" style="padding:6px 12px; cursor:pointer;">Close</button>
+      </div>
+      <div id="analysisContent"></div>
+    </div>
+  </div>
+
+  <!-- API Configuration Modal (OpenAI / OpenRouter) -->
+  <div id="apiConfigModal"
+    style="position:fixed; inset:0; display:none; align-items:center; justify-content:center; background:rgba(0,0,0,0.45); z-index: 1000;">
+    <div
+      style="width:520px; background:white; padding:20px; border-radius:12px; box-shadow:0 12px 40px rgba(0,0,0,0.3); max-height: 90vh; overflow-y: auto;">
+      <h2 style="margin:0 0 16px 0;">⚙️ API Configuration (OpenRouter)</h2>
+
+      <div style="background:#eff6ff; border:1px solid #bfdbfe; border-radius:8px; padding:12px; margin-bottom:16px;">
+        <div style="font-size:13px; color:#1e40af; line-height:1.5;">
+          <b>📌 All models are accessed via OpenRouter</b><br>
+          Get your API key from <a href="https://openrouter.ai/keys" target="_blank"
+            style="color:#2563eb;">openrouter.ai/keys</a><br>
+          One key for all models: GPT, Claude, DeepSeek, Llama, Qwen, Mistral, etc.
+        </div>
+      </div>
+
+      <label style="display:block; margin:12px 0 6px; font-weight:600;">OpenRouter API Key:</label>
+      <input type="password" id="apiKeyInput" placeholder="sk-or-v1-..."
+        style="width:100%; padding:8px; border:1px solid #cbd5e1; border-radius:6px; font-family:monospace;">
+      <div style="font-size:12px; color:#64748b; margin-top:4px;">
+        Stored locally in browser. Never sent to our servers.
+      </div>
+
+      <label style="display:block; margin:16px 0 6px; font-weight:600;">
+        <input type="checkbox" id="useApiCheckbox"> Enable Auto Mode (Use API automatically)
+      </label>
+
+      <label style="display:block; margin:12px 0 6px; font-weight:600;">Model:</label>
+      <select id="apiModelSelect" style="width:100%; padding:8px; border:1px solid #cbd5e1; border-radius:6px;">
+        <optgroup label="OpenAI">
+          <option value="openai/gpt-4o">GPT-4o</option>
+          <option value="openai/gpt-4o-mini" selected>GPT-4o Mini</option>
+          <option value="openai/o1">o1</option>
+        </optgroup>
+        <optgroup label="Anthropic Claude">
+          <option value="anthropic/claude-3.5-sonnet">Claude 3.5 Sonnet</option>
+          <option value="anthropic/claude-3-opus">Claude 3 Opus</option>
+          <option value="anthropic/claude-3-haiku">Claude 3 Haiku</option>
+        </optgroup>
+        <optgroup label="DeepSeek">
+          <option value="deepseek/deepseek-chat">DeepSeek Chat</option>
+        </optgroup>
+        <optgroup label="Meta Llama">
+          <option value="meta-llama/llama-3.3-70b-instruct">Llama 3.3 70B</option>
+          <option value="meta-llama/llama-3.1-405b-instruct">Llama 3.1 405B</option>
+        </optgroup>
+        <optgroup label="Qwen">
+          <option value="qwen/qwen-2.5-72b-instruct">Qwen 2.5 72B</option>
+        </optgroup>
+        <optgroup label="Mistral">
+          <option value="mistralai/mistral-large">Mistral Large</option>
+        </optgroup>
+      </select>
+      <div style="margin-top:8px;">
+        <input type="text" id="customModelInput" placeholder="e.g. anthropic/claude-3-opus"
+          style="width:100%; padding:8px; border:1px solid #cbd5e1; border-radius:6px; display:none; font-size:13px;">
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+          <button type="button" id="toggleCustomModel"
+            style="background:none; border:none; color:#0ea5e9; cursor:pointer; padding:4px 0; font-size:12px; text-decoration:underline;">
+            ⚙️ Use custom model ID
+          </button>
+          <a href="https://openrouter.ai/models" target="_blank"
+            style="font-size:11px; color:#64748b; text-decoration:none;">
+            View all models →
+          </a>
+        </div>
+      </div>
+
+      <label style="display:block; margin:12px 0 6px; font-weight:600;">Temperature: <span
+          id="tempVal">0.7</span></label>
+      <input type="range" id="apiTempSlider" min="0" max="2" step="0.1" value="0.7" style="width:100%;">
+      <div style="font-size:12px; color:#64748b;">Lower = more deterministic, Higher = more creative</div>
+
+      <div style="display:flex; gap:8px; margin-top:20px;">
+        <button id="saveApiConfig"
+          style="flex:1; background:#10b981; color:white; padding:10px; border-radius:8px; border:none; cursor:pointer; font-weight:600;">💾
+          Save</button>
+        <button id="testApiBtn"
+          style="flex:1; background:#0ea5e9; color:white; padding:10px; border-radius:8px; border:none; cursor:pointer;">🧪
+          Test API</button>
+        <button id="closeApiConfig"
+          style="flex:1; padding:10px; border-radius:8px; border:1px solid #cbd5e1; background:white; cursor:pointer;">Close</button>
+      </div>
+
+      <div id="apiTestResult" style="margin-top:12px; padding:8px; border-radius:6px; display:none;"></div>
+    </div>
+  </div>
+
+  <!-- Human post-trial survey modal -->
+  <div id="surveyModal">
+    <div id="surveyCard">
+      <div style="font-weight:700; margin-bottom:6px;">Trial Survey</div>
+      <div id="surveyReason" style="font-size:14px; font-weight:600; margin-bottom:12px; text-align:center;"></div>
+      <label for="beliefSlider">Contextual Belief (0 = Safe, 100 = Dangerous)</label>
+      <input id="beliefSlider" type="range" min="0" max="100" value="50" oninput="document.getElementById('beliefVal').innerText = this.value">
+      <div class="muted" style="text-align: center; margin-top: 5px;">Current Value: <span id="beliefVal">50</span></div>
+
+      <div style="display:flex; gap:8px; justify-content:flex-end; margin-top:14px;">
+        <button id="skipSurvey">Skip</button>
+        <button id="okSurvey">Submit</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/analysis.js"></script>
+  <script src="./js/driver_layers_v6.js?v=8.7"></script>
+  <script>
+    // Wire slider value labels
+    const pairs = [
+      ['ctl_max_steps', 'val_max_steps'],
+      ['ctl_cols', 'val_cols'],
+      ['ctl_drain_step', 'val_drain_step'],
+      ['ctl_drain_coll', 'val_drain_coll'],
+      ['ctl_urgency', 'val_urgency'],
+      ['ctl_vol_low', 'val_vol_low'],
+      ['ctl_vol_high', 'val_vol_high'],
+      ['ctl_gust_rate', 'val_gust_rate'],
+      ['ctl_bias', 'val_bias'],
+      ['ctl_dense', 'val_dense'],
+      ['ctl_sparse', 'val_sparse'],
+      ['ctl_corr_keep', 'val_corr_keep'],
+      ['ctl_drift_range', 'val_drift_range'],
+      ['ctl_drift_prob', 'val_drift_prob'],
+    ];
+    pairs.forEach(([i, v]) => {
+      const el = document.getElementById(i);
+      const out = document.getElementById(v);
+      const fmt = (x) => {
+        const f = parseFloat(x);
+        return Math.abs(f - Math.round(f)) < 1e-6 ? String(Math.round(f)) : String(f);
+      };
+      el.addEventListener('input', () => out.textContent = fmt(el.value));
+      out.textContent = fmt(el.value);
+    });
+  </script>
+</body>
+
+</html>
