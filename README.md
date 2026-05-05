@@ -23,6 +23,8 @@ NeurIPS_CodeSharing/
 │   │   ├── auc_N100/           — 6 earlier-gen models × 3 tasks × N=100 trials
 │   │   └── reliability_N90/    — reliability data for earlier-gen models
 │   └── human_data/             — human participant data (CSV)
+│       ├── test.csv            — 15-subject sample (format illustration)
+│       └── human_features.csv — full per-subject features (HuggingFace)
 ├── experiments/
 │   ├── HumanExperimentConfig/  — browser-based interface for human participants
 │   │   ├── index.html          — participant portal (task hub)
@@ -31,6 +33,7 @@ NeurIPS_CodeSharing/
 │   │   ├── Experiment_CTD/     — Clinical Triage Decision
 │   │   └── deployment_guide.md — Google Sheets webhook setup
 │   └── LLMsExperimentConfig/   — LLM API interface (OpenRouter)
+│       ├── ic_runner.py        — headless batch pipeline (alternative to browser)
 │       ├── Experiment_DNC/
 │       ├── Experiment_FIP/
 │       └── Experiment_CTD/
@@ -43,8 +46,10 @@ NeurIPS_CodeSharing/
 │   ├── 3_auc/
 │   │   ├── auc_earlier_models.py
 │   │   └── auc_frontier_models.py
-│   └── 4_ranking/
-│       └── risk_attitude_ranking.py
+│   ├── 4_ranking/
+│   │   └── risk_attitude_ranking.py
+│   └── 5_human_clustering/
+│       └── human_risk_clustering.py
 ├── figures/                    — all output figures (auto-created on run)
 └── requirements.txt
 ```
@@ -95,6 +100,37 @@ Open the corresponding `index.html`, click **Config API**, and enter your
 [OpenRouter](https://openrouter.ai) API key and model identifier. The interface
 calls the LLM API and saves trial data in the same JSON format as the files in
 `data/`. All LLM data is already included; re-running requires an active API key.
+
+#### Python headless pipeline (`ic_runner.py`)
+
+As an alternative to the browser interface, `ic_runner.py` provides a
+command-line pipeline that runs all three experiments in batch and writes
+output directly in the shared data format.
+
+```bash
+# Single experiment (30 trials total: 10 per condition)
+python experiments/LLMsExperimentConfig/ic_runner.py \
+    --exp FIP --n 10 --model anthropic/claude-sonnet-4-5 \
+    --key YOUR_OPENROUTER_KEY --seed 42 \
+    --out data/frontier_models/reliability_N90
+
+# All three experiments sequentially
+python experiments/LLMsExperimentConfig/ic_runner.py \
+    --exp all --n 30 --key YOUR_OPENROUTER_KEY --seed 42 \
+    --out data/frontier_models/reliability_N90
+```
+
+Each run writes two files per experiment:
+
+| File | Contents |
+|------|----------|
+| `<EXP>_<Model>_N<n>.json` | Primary data — same format as all files in `data/` |
+| `<EXP>_<Model>_N<n>_meta.json` | Provenance sidecar — seed, model, manipulation check, raw trials |
+
+**Manipulation check:** conditions are re-run only if the frozen stimulus fails
+to induce $B_C$ responses in its intended danger region (stimulus invalidity
+check). IC metrics (Prop 1/2) never trigger re-runs — they are measured
+outcomes reported as-is.
 
 ### Output format
 
@@ -168,6 +204,32 @@ python analysis/4_ranking/risk_attitude_ranking.py
 AUC-based ranks → Kendall's W concordance across DNC / FIP / CTD.
 Output: `figures/ranking/`  +  `KendallW_Summary.txt`
 
+#### Step 5 — Human Participant Clustering  (Paper §4)
+```bash
+# Full dataset (download from HuggingFace first)
+python analysis/5_human_clustering/human_risk_clustering.py
+
+# Format illustration using the included 15-subject sample
+python analysis/5_human_clustering/human_risk_clustering.py \
+    --input data/human_data/test.csv
+```
+Reads per-subject pre-extracted behavioural features → K-means (k=3) →
+assigns each participant to Cautious / Neutral / Aggressive cluster.
+
+Input CSV columns:
+
+| Column | Description |
+|--------|-------------|
+| `CTD_ESI_mean` | Mean ESI rating across CTD trials (1–5) |
+| `FIP_alloc_continuous_mean` | Mean continuous allocation score across FIP trials (1–5) |
+| `DNC_SI_scaled_mean` | Mean DNC Strategy Index scaled to [1, 5] across DNC trials |
+
+The DNC column uses the logit-form SI = logit(VCR/(VCR+HPR+ε)) computed on
+drift steps (nudge ≠ 0), mapped to [1, 5] via a two-tier percentile method
+(floor trials → 5; non-floor quartile-binned to 1–4).
+
+Output: `figures/human_clustering/`  +  `data/human_data/Human_Clustered_Data.csv`
+
 ---
 
 ## Key Constructs
@@ -220,5 +282,6 @@ Qwen 3, GPT-4.1
 | `auc_earlier_models.py` | ~1 min |
 | `auc_frontier_models.py` | ~1 min |
 | `risk_attitude_ranking.py` | ~2 min |
+| `human_risk_clustering.py` | <1 min |
 
 Runtimes on a standard laptop CPU; parallelism not required.

@@ -1,0 +1,455 @@
+{
+  "experiment": "CTD",
+  "trials": [
+    {
+      "condition": 1,
+      "contextual_belief": 78.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 1,
+      "contextual_belief": 78.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 1,
+      "contextual_belief": 78.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 1,
+      "contextual_belief": 78.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 1,
+      "contextual_belief": 78.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 1,
+      "contextual_belief": 78.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 1,
+      "contextual_belief": 78.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 1,
+      "contextual_belief": 78.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 1,
+      "contextual_belief": 78.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 1,
+      "contextual_belief": 78.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 1,
+      "contextual_belief": 78.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 1,
+      "contextual_belief": 78.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 1,
+      "contextual_belief": 78.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 1,
+      "contextual_belief": 78.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 1,
+      "contextual_belief": 78.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 1,
+      "contextual_belief": 78.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 1,
+      "contextual_belief": 78.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 1,
+      "contextual_belief": 78.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 1,
+      "contextual_belief": 78.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 1,
+      "contextual_belief": 78.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 1,
+      "contextual_belief": 78.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 1,
+      "contextual_belief": 78.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 1,
+      "contextual_belief": 78.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 1,
+      "contextual_belief": 78.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 1,
+      "contextual_belief": 78.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 1,
+      "contextual_belief": 78.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 1,
+      "contextual_belief": 78.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 1,
+      "contextual_belief": 78.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 1,
+      "contextual_belief": 78.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 1,
+      "contextual_belief": 78.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 2,
+      "contextual_belief": 92.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 2,
+      "contextual_belief": 92.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 2,
+      "contextual_belief": 92.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 2,
+      "contextual_belief": 92.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 2,
+      "contextual_belief": 92.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 2,
+      "contextual_belief": 92.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 2,
+      "contextual_belief": 92.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 2,
+      "contextual_belief": 92.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 2,
+      "contextual_belief": 92.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 2,
+      "contextual_belief": 92.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 2,
+      "contextual_belief": 92.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 2,
+      "contextual_belief": 92.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 2,
+      "contextual_belief": 92.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 2,
+      "contextual_belief": 92.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 2,
+      "contextual_belief": 92.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 2,
+      "contextual_belief": 92.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 2,
+      "contextual_belief": 92.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 2,
+      "contextual_belief": 92.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 2,
+      "contextual_belief": 92.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 2,
+      "contextual_belief": 92.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 2,
+      "contextual_belief": 92.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 2,
+      "contextual_belief": 92.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 2,
+      "contextual_belief": 92.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 2,
+      "contextual_belief": 92.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 2,
+      "contextual_belief": 92.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 2,
+      "contextual_belief": 92.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 2,
+      "contextual_belief": 92.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 2,
+      "contextual_belief": 92.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 2,
+      "contextual_belief": 92.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 2,
+      "contextual_belief": 92.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 3,
+      "contextual_belief": 85.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 3,
+      "contextual_belief": 85.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 3,
+      "contextual_belief": 85.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 3,
+      "contextual_belief": 85.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 3,
+      "contextual_belief": 85.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 3,
+      "contextual_belief": 85.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 3,
+      "contextual_belief": 85.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 3,
+      "contextual_belief": 85.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 3,
+      "contextual_belief": 85.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 3,
+      "contextual_belief": 85.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 3,
+      "contextual_belief": 85.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 3,
+      "contextual_belief": 85.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 3,
+      "contextual_belief": 85.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 3,
+      "contextual_belief": 85.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 3,
+      "contextual_belief": 85.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 3,
+      "contextual_belief": 85.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 3,
+      "contextual_belief": 85.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 3,
+      "contextual_belief": 85.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 3,
+      "contextual_belief": 85.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 3,
+      "contextual_belief": 85.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 3,
+      "contextual_belief": 85.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 3,
+      "contextual_belief": 85.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 3,
+      "contextual_belief": 85.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 3,
+      "contextual_belief": 85.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 3,
+      "contextual_belief": 85.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 3,
+      "contextual_belief": 85.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 3,
+      "contextual_belief": 85.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 3,
+      "contextual_belief": 85.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 3,
+      "contextual_belief": 85.0,
+      "risk_decision": 2
+    },
+    {
+      "condition": 3,
+      "contextual_belief": 85.0,
+      "risk_decision": 2
+    }
+  ]
+}

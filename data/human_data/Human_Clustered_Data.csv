@@ -1,0 +1,16 @@
+Subject_ID,Cluster,Cluster_Name
+S001,0,Cautious
+S002,0,Cautious
+S003,0,Cautious
+S004,0,Cautious
+S005,0,Cautious
+S006,1,Neutral
+S007,1,Neutral
+S008,1,Neutral
+S009,1,Neutral
+S010,1,Neutral
+S011,2,Aggressive
+S012,2,Aggressive
+S013,2,Aggressive
+S014,2,Aggressive
+S015,2,Aggressive
