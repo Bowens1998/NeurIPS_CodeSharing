@@ -14,7 +14,7 @@ Output     : figures/olr_frontier/
 Feeds into: Step 3 (auc_frontier_models.py) which integrates the same OLR curves
             to produce scalar AUC values.
 
-Full dataset: https://huggingface.co/datasets/[dataset-url]
+Full dataset: https://huggingface.co/datasets/LLMsRiskAttitudeDataShare/DataShare_NeurIPS2026_LLMsRiskAttitude
 """
 
 import sys, json, warnings

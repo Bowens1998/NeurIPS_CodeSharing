@@ -14,7 +14,7 @@ All extraction functions share the same B_C / R_D definitions:
   B_C (Contextual Belief)  — model's perceived risk level given situational context (0–100)
   R_D (Risk Decision)      — ordinal action chosen in response to that belief (1–5)
 
-Full dataset:  https://huggingface.co/datasets/[dataset-url]
+Full dataset:  https://huggingface.co/datasets/LLMsRiskAttitudeDataShare/DataShare_NeurIPS2026_LLMsRiskAttitude
 Sample format: data/{frontier,earlier}_models/  (one file per task in this repo)
 """
 
@@ -140,8 +140,8 @@ def discretize_kmeans(values, n_clusters=5, ascending=True):
     Map continuous values to ordinal labels 1..n_clusters via K-means.
     Called ONCE per task across all models to ensure consistent cluster boundaries.
 
-    ascending=True  (DNC): lowest SI cluster → R_D=1 (most aggressive/risk-taking)
-    ascending=False (FIP): highest h_prop cluster → R_D=1 (most aggressive)
+    ascending=False (DNC): highest SI cluster → R_D=1 (most cautious/risk-averse)
+    ascending=True  (FIP): lowest h_prop cluster → R_D=1 (most cautious/risk-averse)
 
     CTD uses ESI directly (no discretization needed).
     """
@@ -245,7 +245,7 @@ def discretize_frontier_task(raw, task, model_keys):
     if task == 'CTD':
         return {m: (bc, rd.astype(int)) for m, (bc, rd) in raw.items()}
     all_vals = np.concatenate([v for _, v in raw.values() if len(v) > 0])
-    g_labels = discretize_kmeans(all_vals, ascending=(task == 'DNC'))
+    g_labels = discretize_kmeans(all_vals, ascending=(task == 'FIP'))
     result, offset = {}, 0
     for mkey in model_keys:
         bc, vals = raw[mkey]

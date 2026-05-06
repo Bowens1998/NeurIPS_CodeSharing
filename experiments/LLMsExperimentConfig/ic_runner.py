@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-IC Runner — Headless batch pipeline for Intra-Consistency experiments.
+IC Runner — Headless batch pipeline for reliability experiments.
 
 Translates the browser-based IC experiments (FIP / CTD / DNC) into a
 standalone Python script that:
@@ -20,15 +20,13 @@ Output (per experiment):
     <out>/<EXP>/<EXP>_<Model>_N<n>.json       — primary data file (shared format)
     <out>/<EXP>/<EXP>_<Model>_N<n>_meta.json  — provenance sidecar (seed, QC, raw)
 
-The primary data file matches the format of all files under data/frontier_models/
-and data/earlier_models/:
-    {
-      "experiment": "FIP",
-      "trials": [
-        {"condition": 1, "contextual_belief": 22.0, "risk_decision": 1},
-        ...
-      ]
-    }
+The primary data file matches the flat array format used in the shared dataset:
+    [
+      {"experiment": "FIP", "model": "DeepSeek V3.2", "model_key": "DeepSeekV3.2",
+       "level": 1, "trial_index": 0, "level_trial_index": 0,
+       "contextual_belief": 22.0, "risk_decision": 1},
+      ...
+    ]
 """
 
 import argparse
@@ -152,6 +150,30 @@ MODEL_SHORT_NAMES = {
     'google/gemini-3.1-pro-preview':     'Gemini3.1Pro',
     'google/gemini-3-flash-preview':     'Gemini3Flash',
     'google/gemini-3.1-flash-lite-preview': 'Gemini3.1FlashLite',
+}
+
+# Full display names (used in the "model" field of output records)
+MODEL_DISPLAY_NAMES = {
+    'openai/gpt-5':                         'GPT-5',
+    'openai/gpt-5.2':                       'GPT-5.2',
+    'openai/gpt-5.4':                       'GPT-5.4',
+    'openai/gpt-5.4-mini':                  'GPT-5.4 Mini',
+    'x-ai/grok-4':                          'Grok 4',
+    'x-ai/grok-4-fast':                     'Grok 4 Fast',
+    'x-ai/grok-4.20':                       'Grok 4.20',
+    'qwen/qwen3-max':                       'Qwen3 Max',
+    'qwen/qwen3-max-thinking':              'Qwen3 Max (Thinking)',
+    'anthropic/claude-opus-4.5':            'Claude Opus 4.5',
+    'anthropic/claude-opus-4.6':            'Claude Opus 4.6',
+    'anthropic/claude-sonnet-4.5':          'Claude Sonnet 4.5',
+    'anthropic/claude-sonnet-4.6':          'Claude Sonnet 4.6',
+    'anthropic/claude-haiku-4.5-20251001':  'Claude Haiku 4.5',
+    'deepseek/deepseek-v3.2':               'DeepSeek V3.2',
+    'deepseek/deepseek-chat':               'DeepSeek V3',
+    'google/gemini-3-pro-preview':          'Gemini 3 Pro',
+    'google/gemini-3.1-pro-preview':        'Gemini 3.1 Pro',
+    'google/gemini-3-flash-preview':        'Gemini 3 Flash',
+    'google/gemini-3.1-flash-lite-preview': 'Gemini 3.1 Flash Lite',
 }
 
 def _model_short_name(model_id):
@@ -1107,25 +1129,34 @@ def run_ic_experiment(exp, api_cfg, n_trials=10, levels=None,
     )
     base_name = f'{exp}_{short_model}_N{total_n}'
 
-    # ── Primary data file: unified flat format (matches shared dataset) ───────
-    trials = []
+    # ── Primary data file: flat array format (matches FrontierModel_reliability_N90) ──
+    model_id      = api_cfg['model']
+    model_display = MODEL_DISPLAY_NAMES.get(model_id, model_id.split('/')[-1])
+    model_key     = short_model   # already computed above via _model_short_name
+
+    records = []
+    global_idx = 0
     for l in sorted(levels):
+        level_idx = 0
         for c, s in all_level_data[l]['pairs']:
             if c is not None and s is not None:
-                trials.append(dict(
-                    condition         = l,
-                    contextual_belief = float(c),
-                    risk_decision     = int(s),
-                ))
+                records.append({
+                    'experiment':        exp,
+                    'model':             model_display,
+                    'model_key':         model_key,
+                    'level':             l,
+                    'trial_index':       global_idx,
+                    'level_trial_index': level_idx,
+                    'contextual_belief': float(c),
+                    'risk_decision':     int(s),
+                })
+                global_idx += 1
+                level_idx  += 1
 
-    data_payload = dict(
-        experiment = exp,
-        trials     = trials,
-    )
     data_fname = out_path / f'{base_name}.json'
     with open(data_fname, 'w') as f:
-        json.dump(data_payload, f, indent=2)
-    print(f'\nData saved   → {data_fname}')
+        json.dump(records, f, indent=2)
+    print(f'\nData saved   -> {data_fname}')
 
     # ── Sidecar provenance file: seed, model, QC details, raw trials ─────────
     configs = []

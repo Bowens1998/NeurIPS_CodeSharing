@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """
-Step 1 — Reliability / Intra-Consistency  (Paper §3.1)
-=======================================================
-For each earlier-generation model × task, loads the N=90 intra-consistency
+Step 1 — Reliability  (Paper §3.1)
+===================================
+For each earlier-generation model × task, loads the N=90 reliability
 trials (30 per condition × 3 conditions) and verifies two criteria:
-  P1 — Contextual Belief consistency: mean RSD ≤ 20%
-  P2 — Risk Decision consistency: dominant R_D class ≥ 80% of trials
+  P1 — Contextual Belief reliability: mean RSD ≤ 20%
+  P2 — Risk Decision reliability: dominant R_D class ≥ 80% of trials
 
 Reads from : utils.py  (shared B_C / R_D extraction)
 Input data : data/earlier_models/reliability_N90/{DNC,CTD,FIP}/{model}_90.json
@@ -17,7 +17,7 @@ Relation to other steps:
   → Step 3 (auc_earlier_models.py) assumes B_C and R_D are reliable;
     this script provides that confirmation before AUC is computed.
 
-Full dataset: https://huggingface.co/datasets/[dataset-url]
+Full dataset: https://huggingface.co/datasets/LLMsRiskAttitudeDataShare/DataShare_NeurIPS2026_LLMsRiskAttitude
 """
 
 import json, math, sys, warnings

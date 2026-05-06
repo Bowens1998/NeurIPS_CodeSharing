@@ -18,7 +18,7 @@ Relation to other steps:
   ← Step 3 computed AUC per model per task for both model sets.
     This step aggregates those AUC values into cross-task rankings.
 
-Full dataset: https://huggingface.co/datasets/[dataset-url]
+Full dataset: https://huggingface.co/datasets/LLMsRiskAttitudeDataShare/DataShare_NeurIPS2026_LLMsRiskAttitude
 """
 
 import sys, json, warnings

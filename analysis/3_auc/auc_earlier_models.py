@@ -18,7 +18,7 @@ Relation to other steps:
   → Step 4 (risk_attitude_ranking.py) uses the AUC values produced here
     together with frontier AUC values to build cross-generation rankings.
 
-Full dataset: https://huggingface.co/datasets/[dataset-url]
+Full dataset: https://huggingface.co/datasets/LLMsRiskAttitudeDataShare/DataShare_NeurIPS2026_LLMsRiskAttitude
 """
 
 import sys, json, warnings

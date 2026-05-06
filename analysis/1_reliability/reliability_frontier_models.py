@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """
-Step 1 — Reliability / Intra-Consistency  (Frontier Models, Paper §3.1)
-========================================================================
-For each frontier model × task, loads the N=90 intra-consistency trials
+Step 1 — Reliability  (Frontier Models, Paper §3.1)
+====================================================
+For each frontier model × task, loads the N=90 reliability trials
 (30 per condition × 3 conditions) and verifies two criteria:
-  P1 — Contextual Belief consistency: mean RSD ≤ 20%
-  P2 — Risk Decision consistency: dominant R_D class ≥ 80% of trials
+  P1 — Contextual Belief reliability: mean RSD ≤ 20%
+  P2 — Risk Decision reliability: dominant R_D class ≥ 80% of trials
 
 IC data format: {"experiment": "DNC", "trials": [{"condition": int, "contextual_belief": float, "risk_decision": int}]}
 Identical format to earlier-model reliability data.
@@ -22,7 +22,7 @@ Relation to other steps:
   Note: Grok 4 fails reliability in all tasks (high σ_r ≈ 2.89) and is
     excluded from the 5-model Kendall W analysis in Step 4.
 
-Full dataset: https://huggingface.co/datasets/[dataset-url]
+Full dataset: https://huggingface.co/datasets/LLMsRiskAttitudeDataShare/DataShare_NeurIPS2026_LLMsRiskAttitude
 """
 
 import json, math, sys, warnings

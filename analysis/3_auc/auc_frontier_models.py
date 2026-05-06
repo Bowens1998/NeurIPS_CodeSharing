@@ -17,7 +17,7 @@ Relation to other steps:
   → Step 4 (risk_attitude_ranking.py) uses the AUC values produced here
     to build cross-task rankings and compute Kendall's W.
 
-Full dataset: https://huggingface.co/datasets/[dataset-url]
+Full dataset: https://huggingface.co/datasets/LLMsRiskAttitudeDataShare/DataShare_NeurIPS2026_LLMsRiskAttitude
 """
 
 import sys, warnings

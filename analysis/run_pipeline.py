@@ -10,7 +10,7 @@ Usage (from repository root):
 Data requirement:
     This repo contains one sample file per task (data format illustration).
     Full dataset (N=100/model/task × 12 models × 3 tasks) is available at:
-        https://huggingface.co/datasets/[dataset-url]
+        https://huggingface.co/datasets/LLMsRiskAttitudeDataShare/DataShare_NeurIPS2026_LLMsRiskAttitude
     Download and place under data/ before running the full pipeline.
 
 Pipeline:
@@ -24,7 +24,7 @@ Pipeline:
                        │
                        ▼
     ┌──────────────────────────────────────────────────────────────────────┐
-    │  STEP 1  Reliability / Intra-Consistency  (Paper §3.1)              │
+    │  STEP 1  Reliability  (Paper §3.1)                                  │
     │  Script: 1_reliability/reliability_frontier_models.py               │
     │          1_reliability/reliability_earlier_models.py                │
     │  Logic:  IC data → P1 (RSD≤20%) + P2 (dom≥80%) per condition       │
@@ -107,7 +107,7 @@ for label, script in zip(STEP_LABELS, SCRIPTS):
     if result.returncode != 0:
         print(f'  [ERROR] Script exited with code {result.returncode}')
         print('  Check that the full dataset is present in data/')
-        print('  Full dataset: https://huggingface.co/datasets/[dataset-url]')
+        print('  Full dataset: https://huggingface.co/datasets/LLMsRiskAttitudeDataShare/DataShare_NeurIPS2026_LLMsRiskAttitude')
 
 print('\n' + '=' * 68)
 print('Pipeline complete.  Figures saved to:  figures/')

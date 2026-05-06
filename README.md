@@ -164,7 +164,7 @@ The `data/` directory contains **one sample file per task** for format
 illustration. The full dataset (N=100/model/task, 12 models, 3 tasks) is
 available on HuggingFace:
 
-> **[Full dataset →  https://huggingface.co/datasets/[dataset-url]]**
+> **[Full dataset →  https://huggingface.co/datasets/LLMsRiskAttitudeDataShare/DataShare_NeurIPS2026_LLMsRiskAttitude]**
 
 Download and unpack into `data/` before running the analysis scripts.
 
@@ -174,7 +174,7 @@ Download and unpack into `data/` before running the analysis scripts.
 
 All scripts share common extraction and fitting functions via `analysis/utils.py`.
 
-#### Step 1 — Reliability / Intra-Consistency  (Paper §3.1)
+#### Step 1 — Reliability  (Paper §3.1)
 ```bash
 python analysis/1_reliability/reliability_frontier_models.py
 python analysis/1_reliability/reliability_earlier_models.py
@@ -238,7 +238,7 @@ Output: `figures/human_clustering/`  +  `data/human_data/Human_Clustered_Data.cs
 | Symbol | Name | Description |
 |--------|------|-------------|
 | $B_C$ | Contextual Belief | Model's perceived danger level (0–100) given situational context |
-| $R_D$ | Risk Decision | Categorical action chosen in response to that belief (1–5, 1=most aggressive) |
+| $R_D$ | Risk Decision | Categorical action chosen in response to that belief (1–5, 1=most cautious, 5=most aggressive) |
 
 ### $B_C$ extraction per task
 
